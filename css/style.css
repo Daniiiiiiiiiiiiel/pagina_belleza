@@ -126,7 +126,7 @@ nav ul li a:hover::after {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(49, 77, 68, 0.7), rgba(49, 77, 68, 0.7)), url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1180&q=80');
+    background: linear-gradient(rgba(49, 77, 68, 0.7), rgba(49, 77, 68, 0.7)), url('../img/inicio/fondo1.jpeg');
     background-size: cover;
     background-position: center;
     height: 90vh;
@@ -1018,4 +1018,50 @@ header .container {
     .logo p {
         font-size: 0.7rem;
     }
+}
+
+/* Agregar estas reglas al archivo css/style.css */
+
+/* Transición suave para imagen de Nosotros */
+.nosotros-img img {
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Transición suave para fondo del Hero */
+.hero {
+    transition: background 0.8s ease-in-out;
+}
+
+/* Preload de imágenes para evitar parpadeo */
+body::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    
+    /* Precargar imágenes de nosotros */
+    background-image: 
+        url('../img/inicio/nosotros.jpeg'),
+        url('../img/inicio/nosotros2.jpeg'),
+        url('../img/inicio/nosotros3.jpeg'),
+        url('../img/inicio/fondo1.jpeg'),
+        url('../img/inicio/fondo2.jpeg');
+}
+
+/* Animación de entrada para la imagen de Nosotros */
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.nosotros-img img.loaded {
+    animation: fadeInImage 0.6s ease-out;
 }

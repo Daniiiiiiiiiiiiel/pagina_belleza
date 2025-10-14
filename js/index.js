@@ -327,3 +327,92 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Sistema de rotación de imágenes para Bella Catys
+// Agregar este código al archivo /js/index.js o crear un nuevo archivo /js/imageRotation.js
+
+// Función para seleccionar imagen aleatoria
+function getRandomImage(imageArray) {
+    const randomIndex = Math.floor(Math.random() * imageArray.length);
+    return imageArray[randomIndex];
+}
+
+// Configuración de imágenes disponibles
+const imageConfig = {
+    nosotros: [
+        '../img/inicio/nosotros.jpeg',
+        '../img/inicio/nosotros2.jpeg',
+        '../img/inicio/nosotros3.jpeg'
+    ],
+    fondoHero: [
+        'img/inicio/fondo1.jpeg',
+        'img/inicio/fondo2.jpeg'
+    ]
+};
+
+// Función para rotar imagen de la sección Nosotros
+function rotateNosotrosImage() {
+    const nosotrosImg = document.querySelector('.nosotros-img img');
+    
+    if (nosotrosImg) {
+        const randomImage = getRandomImage(imageConfig.nosotros);
+        
+        // Aplicar efecto de fade
+        nosotrosImg.style.opacity = '0';
+        
+        setTimeout(() => {
+            nosotrosImg.src = randomImage;
+            nosotrosImg.style.opacity = '1';
+        }, 300);
+        
+        console.log('Imagen Nosotros cargada:', randomImage);
+    }
+}
+
+// Función para rotar fondo del Hero
+function rotateHeroBackground() {
+    const heroSection = document.querySelector('.hero');
+    
+    if (heroSection) {
+        const randomFondo = getRandomImage(imageConfig.fondoHero);
+        
+        // Aplicar nuevo fondo con gradiente
+        heroSection.style.background = `linear-gradient(rgba(49, 77, 68, 0.7), rgba(49, 77, 68, 0.7)), url('../${randomFondo}')`;
+        heroSection.style.backgroundSize = 'cover';
+        heroSection.style.backgroundPosition = 'center';
+        
+        console.log('Fondo Hero cargado:', randomFondo);
+    }
+}
+
+// Función principal de inicialización
+function initImageRotation() {
+    rotateNosotrosImage();
+    rotateHeroBackground();
+}
+
+// Ejecutar al cargar la página
+document.addEventListener('DOMContentLoaded', initImageRotation);
+
+// También ejecutar cuando la página sea visible (por si viene de cache)
+document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) {
+        initImageRotation();
+    }
+});
+
+// Opcional: Rotación automática cada X segundos (comentado por defecto)
+/*
+setInterval(() => {
+    rotateNosotrosImage();
+}, 5000); // Cambia cada 5 segundos
+*/
+
+// Exportar funciones para uso externo si es necesario
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = {
+        initImageRotation,
+        rotateNosotrosImage,
+        rotateHeroBackground
+    };
+}
