@@ -1114,6 +1114,7 @@ header .container {
     
     .logo img {
         height: 95px;
+        margin-right: 5lvh;
         max-width: 150px;
     }
     
