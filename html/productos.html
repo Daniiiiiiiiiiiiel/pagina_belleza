@@ -13,13 +13,14 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1>Bella Catys</h1>
-                <p class="italic">Tu belleza, nuestra pasión</p>
+                <a href="../index.html">
+                <img onclick="" src="../img/inicio/bellacatys.png" alt="logo principal">
+                </a>
             </div>
             <nav>
                 <ul>
                     <li><a href="../index.html#inicio">Inicio</a></li>
-                    <li><a href="../catalogo.html" class="active">Catálogo</a></li>
+                    <li><a href="../html/productos.html" class="active">Catálogo</a></li>
                     <li><a href="../index.html#nosotros">Nosotros</a></li>
                     <li><a href="../index.html#contacto">Contacto</a></li>
                 </ul>
@@ -71,7 +72,7 @@
             <main class="catalogo-main">
                 <div class="catalogo-header">
                     <h1>Catálogo de <span class="italic">Productos</span></h1>
-                    <p class="resultados-count">Mostrando <span id="count">12</span> productos</p>
+                    <p class="resultados-count"><span id="count"></span> productos disponibles</p>
                 </div>
 
                 <!-- Lista de productos -->
@@ -117,7 +118,7 @@
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://wa.me/50689523778" class="social-link"><i class="fab fa-whatsapp"></i></a>
                         <!-- <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a> -->
                     </div>
                 </div>
@@ -137,14 +138,14 @@
                         <p><i class="fas fa-map-marker-alt"></i> Calle Principal 123, Ciudad</p>
                     </div>
                 </div>
-                <div class="footer-section">
+                <!-- <div class="footer-section">
                     <h4>Newsletter</h4>
                     <p>Suscríbete para recibir ofertas</p>
                     <form class="newsletter-form">
                         <input type="email" placeholder="Tu correo electrónico" required>
                         <button type="submit">Enviar</button>
                     </form>
-                </div>
+                </div> -->
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Bella Catys. Todos los derechos reservados.</p>
@@ -152,6 +153,6 @@
         </div>
     </footer>
     
-    <script src="../js/productos.js"></script>
+    <script type="module" src="../js/productos.js"></script>
 </body>
 </html>

@@ -208,6 +208,8 @@ nav ul li a:hover::after {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .producto:hover {
@@ -251,6 +253,9 @@ nav ul li a:hover::after {
 
 .producto-info {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .producto-info h3 {
@@ -264,6 +269,7 @@ nav ul li a:hover::after {
     margin-bottom: 1.2rem;
     font-size: 0.95rem;
     line-height: 1.5;
+    flex: 1;
 }
 
 .producto-detalles {
@@ -295,6 +301,7 @@ nav ul li a:hover::after {
     width: 100%;
     font-size: 1rem;
     letter-spacing: 0.5px;
+    margin-top: auto;
 }
 
 .btn-producto:hover {
@@ -688,7 +695,7 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-    nav ul {
+       nav ul {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -697,7 +704,7 @@ footer {
         width: 100%;
         background-color: var(--color-blanco);
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-        padding: 1rem 0;
+        padding: 1rem 0 0 0;
     }
     
     nav ul.active {
@@ -707,8 +714,31 @@ footer {
     nav ul li {
         margin: 0;
         text-align: center;
-        padding: 1rem;
+        padding: 1rem 1rem 1rem 1rem;
         border-bottom: 1px solid #eee;
+    }
+    
+    nav ul li:last-child {
+        padding-bottom: 1rem;
+        border-bottom: none;
+    }
+    
+    nav ul li a {
+        display: block;
+        position: relative;
+    }
+    
+    nav ul li a::after {
+        margin-left: -5lvh;
+        bottom: -1rem;
+        left: 0;
+        height: 1px;
+    }
+    
+    nav ul li a:hover::after,
+    nav ul li a.active::after {
+        margin-left: -5lvh;
+        width: 150%;
     }
     
     .mobile-menu {
@@ -774,5 +804,217 @@ footer {
     
     .btn-comprar, .btn-whatsapp {
         min-width: 100%;
+    }
+        /* Footer responsive - diseño mejorado */
+    footer {
+        padding: 2.5rem 0 1rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    
+    .footer-section {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 1.5rem;
+        border-radius: 15px;
+        border-left: 3px solid var(--color-naranja);
+    }
+    
+    .footer-section h3,
+    .footer-section h4 {
+        margin-bottom: 1.2rem;
+        font-size: 1.4rem;
+        color: white;
+    }
+    
+    .footer-section p {
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+    
+    .footer-section ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .footer-section ul li a {
+        display: block;
+        padding: 0.5rem;
+        border-radius: 8px;
+        transition: all 0.3s;
+    }
+    
+    .footer-section ul li a:hover {
+        background: rgba(255, 255, 255, 0.1);
+        padding-left: 1rem;
+    }
+    
+    .social-links {
+        justify-content: flex-start;
+        gap: 10px;
+        margin-top: 1.2rem;
+        flex-wrap: wrap;
+    }
+    
+    .social-link {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+    
+    .contact-info p {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 0.8rem;
+        border-radius: 8px;
+        margin-bottom: 0.8rem;
+        font-size: 0.95rem;
+    }
+    
+    .contact-info i {
+        width: 25px;
+        font-size: 1.1rem;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-top: 1.2rem;
+    }
+    
+    .newsletter-form input {
+        border-radius: 8px;
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+    
+    .newsletter-form button {
+        border-radius: 8px;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+    .footer-bottom {
+        padding: 2rem 1rem 1rem;
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+        .nosotros-text h2{
+        text-align: center;
+    }
+}
+
+
+
+/* Header con altura fija */
+header {
+    background-color: var(--color-blanco);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 0;
+    height: 90px;
+    transition: all 0.3s ease;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+/* Estilos mejorados para el logo */
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2px;
+    height: 100%;
+}
+
+.logo img {
+    height: 110px;
+    width: auto;
+    max-width: 250px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+.logo p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 0.85rem;
+    color: var(--color-naranja);
+    margin: 0;
+    padding-left: 5px;
+    line-height: 1;
+}
+
+/* Responsive para el logo y header */
+@media (max-width: 1024px) {
+    header {
+        height: 85px;
+    }
+    
+    .logo img {
+        height: 105px;
+        max-width: 220px;
+    }
+    
+    .logo p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 105px;
+    }
+    
+    header .container {
+        padding: 0 1rem;
+    }
+    
+    .logo {
+        align-items: center;
+    }
+    
+    .logo img {
+        height: 95px;
+        max-width: 180px;
+    }
+    
+    .logo p {
+        font-size: 0.75rem;
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 90px;
+    }
+    
+    .logo img {
+        height: 40px;
+        max-width: 150px;
+    }
+    
+    .logo p {
+        font-size: 0.7rem;
     }
 }

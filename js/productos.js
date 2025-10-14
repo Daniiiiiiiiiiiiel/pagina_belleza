@@ -1,99 +1,10 @@
-// Base de datos de productos (primeros 10)
-const productosDB = [
-    {
-        id: 1,
-        nombre: "Cachos Hair Jelly",
-        marca: "SKALA (Línea Brasil)",
-        categoria: "belleza",
-        descripcion: "Gelatina capilar especialmente formulada para definir y realzar todo tipo de rizos. Proporciona definición, hidratación y protección térmica. Ideal para mantener los rizos con aspecto natural, sin encrespamiento y con brillo duradero. #1 en ventas en Brasil.",
-        caracteristicas: ["1000g", "Para todo tipo de rizos", "Definición y protección", "Gelatina capilar"],
-        imagen: "../img/lote1/producto1.png"
-    },
-    {
-        id: 2,
-        nombre: "Óleo de Argan",
-        marca: "SKALA (Línea EXPERT)",
-        categoria: "belleza",
-        descripcion: "Tratamiento nutritivo y revitalizante con aceite de argán para cabellos secos y opacos. Formulado con resistencia capilar mejorada, proporciona nutrición profunda, brillo intenso y suavidad. 100% vegano y sin ingredientes de origen animal.",
-        caracteristicas: ["1000g", "Aceite de Argán", "100% Vegano", "Nutrición y revitalización"],
-        imagen: "../img/lote1/producto2.png"
-    },
-    {
-        id: 3,
-        nombre: "Keratina Vegetal",
-        marca: "SKALA (Línea EXPERT)",
-        categoria: "belleza",
-        descripcion: "Tratamiento revitalizante y fortalecedor con keratina vegetal. Diseñado para reparar, fortalecer y restaurar la estructura capilar. Ideal para cabellos débiles, quebradizos o dañados por procesos químicos. Co-wash.",
-        caracteristicas: ["1000g", "Keratina Vegetal", "Revitaliza y fortalece", "Co-wash"],
-        imagen: "../img/lote1/producto3.png"
-    },
-    {
-        id: 4,
-        nombre: "Óleo de Coco",
-        marca: "SKALA (Línea EXPERT)",
-        categoria: "belleza",
-        descripcion: "Tratamiento nutritivo e hidratante profundo con aceite de coco. Proporciona nutrición intensiva, hidratación profunda y restauración capilar. 100% vegano, ideal para cabellos secos y dañados que necesitan recuperar vitalidad.",
-        caracteristicas: ["1000g", "Aceite de Coco", "100% Vegano", "Nutrición e hidratación profunda"],
-        imagen: "../img/lote1/producto4.png"
-    },
-    {
-        id: 5,
-        nombre: "12 em 1",
-        marca: "SKALA",
-        categoria: "belleza",
-        descripcion: "Tratamiento multibeneficio que ofrece 12 beneficios en un solo producto. Proporciona restauración, brillo, suavidad, hidratación y protección. Fórmula innovadora para cabellos renovados que combina múltiples tratamientos en una sola aplicación.",
-        caracteristicas: ["1000g", "12 beneficios", "Restauración y brillo", "Liberado"],
-        imagen: "../img/lote1/producto5.png"
-    },
-    {
-        id: 6,
-        nombre: "Genetiqs",
-        marca: "SKALA (Línea GENETIQS)",
-        categoria: "belleza",
-        descripcion: "Tratamiento profesional que proporciona fuerza, brillo e hidratación. Formulado con fuerza botánica para cabellos opacos, débiles y sin frizz. Diseñado para transformar cabellos debilitados en cabellos fuertes y radiantes.",
-        caracteristicas: ["1000g", "Fuerza botánica", "Brillo e hidratación", "Liberado"],
-        imagen: "../img/lote1/producto6.png"
-    },
-    {
-        id: 7,
-        nombre: "Coquetel de Frutas Kids",
-        marca: "SKALA (Línea EXPERT)",
-        categoria: "belleza",
-        descripcion: "Tratamiento 2 en 1 especialmente formulado para cabellos infantiles. Con coco y aceite de almendras, limpia y desenreda suavemente mientras nutre el cabello de los niños. Fórmula dermatológicamente testeada, suave y divertida.",
-        caracteristicas: ["1000g", "2 en 1", "Coco y almendras", "Para niños", "Liberado"],
-        imagen: "../img/lote1/producto7.png"
-    },
-    {
-        id: 8,
-        nombre: "Bomba de Biotina",
-        marca: "SKALA (Línea EXPERT)",
-        categoria: "belleza",
-        descripcion: "Tratamiento fortificante con biotina para cabellos débiles y quebradizos. Proporciona nutrición, fortalecimiento y crecimiento saludable del cabello. La biotina ayuda a mejorar la estructura capilar desde la raíz hasta las puntas.",
-        caracteristicas: ["1000g", "Biotina", "Nutrición y fortalecimiento", "Liberado"],
-        imagen: "../img/lote1/producto8.png"
-    },
-    {
-        id: 9,
-        nombre: "Cacau",
-        marca: "SKALA (Línea Brasil)",
-        categoria: "belleza",
-        descripcion: "Tratamiento con cacao que proporciona fuerza y brillo al cabello. Enriquecido con las propiedades antioxidantes del cacao, nutre profundamente y protege el cabello, dejándolo suave, brillante y saludable con un aroma delicioso.",
-        caracteristicas: ["1000g", "Cacao", "Fuerza y brillo", "Hidratación"],
-        imagen: "../img/lote1/producto9.png"
-    },
-    {
-        id: 10,
-        nombre: "Divino Putinho #Influencer",
-        marca: "SKALA (Línea EXPERT)",
-        categoria: "belleza",
-        descripcion: "Tratamiento 2 en 1 hidratante libre de sulfatos. Crema multiuso que limpia y trata en un solo paso, ideal para mantener rizos definidos y cabello hidratado. Fórmula moderna diseñada para el cuidado capilar actual.",
-        caracteristicas: ["1000g", "2 en 1", "Libre de sulfato", "Hidratante", "Liberado"],
-        imagen: "../img/lote1/producto10.png"
-    }
-];
+import { productosDB } from './data.js';
+
 
 // Variables globales
 let productosFiltrados = [...productosDB];
+let productosMostrados = 0;
+const PRODUCTOS_POR_PAGINA = 10;
 
 // Inicialización
 document.addEventListener('DOMContentLoaded', function() {
@@ -101,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function inicializarApp() {
-    renderizarProductos(productosDB);
+    renderizarProductos(productosDB, true);
     configurarFiltros();
     configurarBusqueda();
     configurarMenuMobile();
@@ -110,9 +21,20 @@ function inicializarApp() {
 }
 
 // Renderizar productos
-function renderizarProductos(productos) {
+function renderizarProductos(productos, reiniciar = false) {
     const contenedor = document.getElementById('productos-lista');
     const countElement = document.getElementById('count');
+    
+    // Si es reinicio, resetear el contador y limpiar el contenedor
+    if (reiniciar) {
+        productosMostrados = 0;
+        contenedor.innerHTML = '';
+        // Eliminar botón "Ver más" si existe
+        const btnExistente = document.getElementById('btn-ver-mas-productos');
+        if (btnExistente) {
+            btnExistente.remove();
+        }
+    }
     
     countElement.textContent = productos.length;
     
@@ -127,8 +49,13 @@ function renderizarProductos(productos) {
         return;
     }
     
+    // Calcular qué productos mostrar
+    const inicio = productosMostrados;
+    const fin = Math.min(productosMostrados + PRODUCTOS_POR_PAGINA, productos.length);
+    const productosAMostrar = productos.slice(inicio, fin);
+    
 // En la función renderizarProductos, agregar la marca en el HTML
-contenedor.innerHTML = productos.map(producto => `
+const nuevosProductosHTML = productosAMostrar.map(producto => `
     <div class="producto-card" data-id="${producto.id}" data-categoria="${producto.categoria}">
         <div class="producto-info-detalle">
             <div>
@@ -167,6 +94,14 @@ contenedor.innerHTML = productos.map(producto => `
     </div>
 `).join('');
     
+    contenedor.insertAdjacentHTML('beforeend', nuevosProductosHTML);
+    
+    // Actualizar contador de productos mostrados
+    productosMostrados = fin;
+    
+    // Agregar o actualizar botón "Ver más"
+    gestionarBotonVerMas(productos);
+    
     // Agregar eventos a botones "Ver más"
     document.querySelectorAll('.btn-ver-mas').forEach(btn => {
         btn.addEventListener('click', function() {
@@ -177,6 +112,62 @@ contenedor.innerHTML = productos.map(producto => `
     
     // Animación de entrada
     animarProductos();
+}
+
+// Gestionar botón "Ver más productos"
+function gestionarBotonVerMas(productos) {
+    // Buscar si ya existe el botón
+    let btnVerMas = document.getElementById('btn-ver-mas-productos');
+    
+    // Si ya mostramos todos los productos, eliminar el botón
+    if (productosMostrados >= productos.length) {
+        if (btnVerMas) {
+            btnVerMas.remove();
+        }
+        return;
+    }
+    
+    // Si no existe el botón, crearlo
+    if (!btnVerMas) {
+        const contenedorCatalogo = document.querySelector('.catalogo-main');
+        btnVerMas = document.createElement('div');
+        btnVerMas.id = 'btn-ver-mas-productos';
+        btnVerMas.className = 'contenedor-ver-mas';
+        btnVerMas.innerHTML = `
+            <button class="btn-ver-mas-productos">
+                <i class="fas fa-chevron-down"></i>
+                Ver más productos
+                <span class="productos-restantes">(${productos.length - productosMostrados} restantes)</span>
+            </button>
+        `;
+        contenedorCatalogo.appendChild(btnVerMas);
+        
+        // Agregar evento al botón
+        btnVerMas.querySelector('.btn-ver-mas-productos').addEventListener('click', function() {
+            cargarMasProductos();
+        });
+    } else {
+        // Actualizar el contador de productos restantes
+        const span = btnVerMas.querySelector('.productos-restantes');
+        if (span) {
+            span.textContent = `(${productos.length - productosMostrados} restantes)`;
+        }
+    }
+}
+
+// Cargar más productos
+function cargarMasProductos() {
+    renderizarProductos(productosFiltrados, false);
+    
+    // Scroll suave hacia los nuevos productos
+    const todosLosProductos = document.querySelectorAll('.producto-card');
+    const ultimoProductoAnterior = todosLosProductos[productosMostrados - PRODUCTOS_POR_PAGINA];
+    
+    if (ultimoProductoAnterior) {
+        setTimeout(() => {
+            ultimoProductoAnterior.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+    }
 }
 
 // Configurar filtros
@@ -228,7 +219,7 @@ function filtrarProductos() {
     }
     
     productosFiltrados = productos;
-    renderizarProductos(productos);
+    renderizarProductos(productos, true);
 }
 
 // Configurar modal
@@ -254,13 +245,6 @@ function configurarModal() {
             modal.style.display = 'none';
         }
     });
-    
-    // Configurar botón comprar
-    document.getElementById('btn-comprar').addEventListener('click', function() {
-        const titulo = document.getElementById('modal-titulo').textContent;
-        alert(`¡Gracias por tu interés en ${titulo}! Serás redirigido al proceso de compra.`);
-        modal.style.display = 'none';
-    });
 }
 
 // Mostrar detalle del producto en modal
@@ -285,10 +269,48 @@ function mostrarDetalleProducto(id) {
             </div>
         `).join('');
         
+        // Configurar botón de comprar con información del producto actual
+        const btnComprar = document.getElementById('btn-comprar');
+        btnComprar.onclick = function() {
+            const numero = '50689523778';
+            const mensaje = encodeURIComponent(
+                `¡Hola! Estoy interesado en el siguiente producto:\n\n` +
+                `📦 *${producto.nombre}*\n` +
+                `🏷️ Marca: ${producto.marca}\n` +
+                `📂 Categoría: ${producto.categoria === 'belleza' ? 'Belleza' : 'Tecnología'}\n\n` +
+                `¿Me podrías dar más información? 😊`
+            );
+            const url = `https://wa.me/${numero}?text=${mensaje}`;
+            window.open(url, '_blank');
+        };
+        
+        // Configurar botón de cerrar usando la CLASE
+        const btnCerrar = document.querySelector('.modal-cerrar');
+        if (btnCerrar) {
+            btnCerrar.onclick = function() {
+                document.getElementById('modal-producto').style.display = 'none';
+            };
+        }
+        
         // Mostrar modal
         document.getElementById('modal-producto').style.display = 'block';
     }
 }
+
+// Función para cerrar el modal
+function cerrarModal() {
+    document.getElementById('modal-producto').style.display = 'none';
+}
+
+// Agregar evento al botón de cerrar
+document.getElementById('modal-cerrar').addEventListener('click', cerrarModal);
+
+// Opcional: Cerrar modal al hacer clic fuera de él
+document.getElementById('modal-producto').addEventListener('click', function(e) {
+    if (e.target === this) {
+        cerrarModal();
+    }
+});
 
 // Animación de productos
 function animarProductos() {
@@ -340,17 +362,17 @@ function configurarMenuMobile() {
 }
 
 // Newsletter
-function configurarNewsletter() {
-    const form = document.querySelector('.newsletter-form');
-    if (form) {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const email = this.querySelector('input[type="email"]').value;
-            alert(`¡Gracias por suscribirte con el email: ${email}!`);
-            this.reset();
-        });
-    }
-}
+// function configurarNewsletter() {
+//     const form = document.querySelector('.newsletter-form');
+//     if (form) {
+//         form.addEventListener('submit', function(e) {
+//             e.preventDefault();
+//             const email = this.querySelector('input[type="email"]').value;
+//             alert(`¡Gracias por suscribirte con el email: ${email}!`);
+//             this.reset();
+//         });
+//     }
+// }
 
 // Cambiar estilo del header al hacer scroll
 window.addEventListener('scroll', function() {
