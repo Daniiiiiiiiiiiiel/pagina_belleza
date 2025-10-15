@@ -330,7 +330,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Crema para peinar enriquecida con gelatina que proporciona definición extraordinaria. Hidratación, superdefinición y fijación flexible con textura gel-creme. Ideal para cabellos 2abc, 3abc y 4abc. Proporciona rizos definidos sin dejar el cabello duro o crujiente.",
         caracteristicas: ["1kg", "Gelatina", "Definición extraordinaria", "Textura gel-creme", "Para todo tipo de rizos"],
-        imagen: "../img/lote4/producto37.png"
+        imagen: "../img2/lote4/producto37.png"
     },
     {
         id: 38,
@@ -339,7 +339,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Máscara concentrada S.O.S Hidratação con aceite de oliva para tratamiento intensivo. Proporciona hidratación profunda, nutrición y restauración para cabellos resecos, porosos y dañados. Fórmula concentrada de acción rápida y eficaz. Restaura la fibra capilar desde el interior.",
         caracteristicas: ["1kg", "Aceite de Oliva", "Hidratación S.O.S", "Máscara concentrada", "Restauración intensa"],
-        imagen: "../img/lote4/producto38.png"
+        imagen: "../img2/lote4/producto38.png"
     },
     {
         id: 39,
@@ -348,7 +348,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Máscara concentrada S.O.S Hidratação con aceite de ricino para tratamiento profundo. El aceite de ricino fortalece, estimula el crecimiento y proporciona hidratación intensa. Ideal para cabellos debilitados, con caída o que necesitan fortalecimiento. Fórmula concentrada de alta eficacia.",
         caracteristicas: ["1kg", "Aceite de Ricino", "Hidratación S.O.S", "Fortalecimiento", "Máscara concentrada"],
-        imagen: "../img/lote4/producto39.png"
+        imagen: "../img2/lote4/producto39.png"
     },
     {
         id: 40,
@@ -357,7 +357,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Crema para peinar S.O.S Cachos con aceite de ricino y queratina para reparación y antifrizz. Tratamiento especializado que repara, fortalece y define rizos dañados. La combinación de ricino y queratina restaura la estructura capilar y proporciona definición duradera.",
         caracteristicas: ["1kg", "Aceite de Ricino", "Queratina", "Reparación y antifrizz", "S.O.S Cachos"],
-        imagen: "../img/lote4/producto40.png"
+        imagen: "../img2/lote4/producto40.png"
     },
     {
         id: 41,
@@ -366,7 +366,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Tratamiento Hidra con extracto de babosa (aloe vera), queratina y glicerina vegetal. Proporciona hidratación intensa, restauración profunda para cabellos dañados y quebradizos. El aloe vera calma y repara, mientras la queratina fortalece. Presentación en botella con dispensador de 1 litro.",
         caracteristicas: ["1L", "Babosa (Aloe Vera)", "Queratina", "Glicerina Vegetal", "Restauración intensa"],
-        imagen: "../img/lote4/producto41.png"
+        imagen: "../img2/lote4/producto41.png"
     },
     {
         id: 42,
@@ -375,7 +375,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Máscara concentrada S.O.S Hidratação con queratina y colágeno para hidratación intensiva. Reconstruye la fibra capilar, repara cabellos dañados y proporciona fuerza y elasticidad. Tratamiento de shock para cabellos muy dañados o procesados químicamente.",
         caracteristicas: ["1kg", "Queratina", "Colágeno", "Hidratación S.O.S", "Máscara concentrada"],
-        imagen: "../img/lote4/producto42.png"
+        imagen: "../img2/lote4/producto42.png"
     },
     {
         id: 43,
@@ -384,7 +384,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Activador de rizos #TodeCacho con reducción volumosa. Proporciona definición, control de volumen y activación de rizos naturales. Ideal para rizos tipo 3 y 4 que necesitan definición sin frizz y control de volumen. Fórmula ligera que no pesa. Presentación de 300ml.",
         caracteristicas: ["300ml", "Activador de rizos", "Reducción volumosa", "Definición sin frizz"],
-        imagen: "../img/lote4/producto43.png"
+        imagen: "../img2/lote4/producto43.png"
     },
     {
         id: 44,
@@ -393,7 +393,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Activador de rizos con recarga de queratina para reparación y brillo. Tratamiento especializado que reconstruye la fibra capilar, repara daños y proporciona definición intensa. La queratina penetra profundamente restaurando la estructura del cabello. Presentación de 500ml.",
         caracteristicas: ["500ml", "Recarga de Queratina", "Reparación y brillo", "Definición intensa"],
-        imagen: "../img/lote4/producto44.png"
+        imagen: "../img2/lote4/producto44.png"
     },
     {
         id: 45,
@@ -402,7 +402,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Activador de rizos con ácido hialurónico para hidratación y sellado. El ácido hialurónico retiene la hidratación, proporciona elasticidad y define los rizos. Tratamiento que sella las cutículas, combate el frizz y mantiene los rizos hidratados por más tiempo. Presentación de 500ml.",
         caracteristicas: ["500ml", "Ácido Hialurónico", "Hidratación y sellado", "Definición duradera"],
-        imagen: "../img/lote4/producto45.png"
+        imagen: "../img2/lote4/producto45.png"
     },
     {
         id: 46,
@@ -411,7 +411,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Activador de rizos con aceite de oliva para nutrición y antifrizz. El aceite de oliva nutre profundamente, proporciona brillo natural y suavidad extrema. Define rizos mientras protege contra el frizz y factores externos. Textura ligera que no deja el cabello pesado. Presentación de 500ml.",
         caracteristicas: ["500ml", "Aceite de Oliva", "Nutrición y antifrizz", "Brillo natural"],
-        imagen: "../img/lote4/producto46.png"
+        imagen: "../img2/lote4/producto46.png"
     },
     {
         id: 47,
@@ -420,7 +420,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Activador de rizos #TodeCacho con aceite de coco. Define intensamente, proporciona hidratación profunda y restaura el brillo natural. El aceite de coco penetra la fibra capilar nutriendo desde el interior. Ideal para rizos secos y sin vida. Presentación de 300ml.",
         caracteristicas: ["300ml", "Aceite de Coco", "Definición intensa", "Hidratación y brillo"],
-        imagen: "../img/lote4/producto47.png"
+        imagen: "../img2/lote4/producto47.png"
     },
     {
         id: 48,
@@ -429,7 +429,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Activador de rizos Hidra 2 en 1 con D-Pantenol para hidratación intensa y movimiento. Fórmula que hidrata, define y proporciona movimiento natural a los rizos. El D-Pantenol retiene la humedad y mejora la elasticidad. Rizos sueltos, definidos y con vida. Presentación de 300ml.",
         caracteristicas: ["300ml", "2 en 1", "D-Pantenol", "Hidratación intensa", "Movimiento natural"],
-        imagen: "../img/lote4/producto48.png"
+        imagen: "../img2/lote4/producto48.png"
     },
         {
         id: 49,
@@ -438,7 +438,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Spray finalizador #TodeCacho con toque de seda para finalizar el peinado de rizos. Proporciona brillo intenso, fijación ligera, control del frizz y protección. Sella las cutículas dejando los rizos con acabado sedoso y natural. Fórmula bifásica que nutre y define. Presentación de 250ml.",
         caracteristicas: ["250ml", "Spray finalizador", "Toque de seda", "Brillo y fijación", "Antifrizz"],
-        imagen: "../img/lote5/producto49.png"
+        imagen: "../img2/lote5/producto49.png"
     },
     {
         id: 50,
@@ -447,7 +447,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Kit Hidra con ceramidas, D-Pantenol y aceite de jojoba. Incluye shampoo 300ml y acondicionador 300ml. Sistema completo de nutrición para cabellos frágiles y opacos. Las ceramidas reparan la fibra capilar, el D-Pantenol hidrata y el aceite de jojoba nutre profundamente.",
         caracteristicas: ["Shampoo 300ml", "Acondicionador 300ml", "Ceramidas", "D-Pantenol", "Aceite de Jojoba"],
-        imagen: "../img/lote5/producto50.png"
+        imagen: "../img2/lote5/producto50.png"
     },
     {
         id: 51,
@@ -456,7 +456,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Shampoo S.O.S Bomba Original profesional con ultra hidratación reconstructora. Fórmula con 10x más hidratación que proporciona tratamiento profesional intensivo. Reconstruye, hidrata y restaura cabellos muy dañados. Ideal para tratamiento de shock. Presentación de 300ml.",
         caracteristicas: ["300ml", "10x más hidratación", "Ultra hidratación", "Reconstructor", "Profesional"],
-        imagen: "../img/lote5/producto51.png"
+        imagen: "../img2/lote5/producto51.png"
     },
     {
         id: 52,
@@ -465,7 +465,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Crema para peinar Meu Lisinho Kids con fórmula especial para niños. Imaginación y diversión para desenredar y cuidar diariamente cabellos infantiles sin nós (nudos). Fórmula suave, segura y testeada dermatológicamente. Facilita el peinado haciendo el momento divertido. Presentación de 300ml.",
         caracteristicas: ["300ml", "Para niños", "Desenredante", "Sin nudos", "Fórmula suave"],
-        imagen: "../img/lote5/producto52.png"
+        imagen: "../img2/lote5/producto52.png"
     },
     {
         id: 53,
@@ -474,7 +474,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Crema para peinar Meu Lisinho Kids con fórmula especial para niños. Imaginación y diversión para desenredar y cuidar diariamente cabellos infantiles sin nós (nudos). Fórmula suave, segura y testeada dermatológicamente. Facilita el peinado haciendo el momento divertido. Presentación de 300ml.",
         caracteristicas: ["300ml", "Para niños", "Desenredante", "Sin nudos", "Fórmula suave"],
-        imagen: "../img/lote5/producto53.png"
+        imagen: "../img2/lote5/producto53.png"
     },
     {
         id: 54,
@@ -483,7 +483,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Tónico fortalecedor S.O.S Bomba para crecimiento capilar. Estimula el crecimiento, fortalece la raíz y reduce la caída. Fórmula concentrada que revitaliza el cuero cabelludo y estimula los folículos pilosos. Aplicación directa en el cuero cabelludo. Presentación de 100ml.",
         caracteristicas: ["100ml", "Tónico fortalecedor", "Estimula crecimiento", "Reduce caída", "Aplicación directa"],
-        imagen: "../img/lote5/producto54.png"
+        imagen: "../img2/lote5/producto54.png"
     },
     {
         id: 55,
@@ -492,7 +492,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Crema para peinar S.O.S Bomba Original con ultra hidratación profesional. Fórmula con 13x más hidratación que nutre, restaura y proporciona brillo extremo. Tratamiento profesional leave-in que sella las cutículas y protege contra daños. Presentación de 300ml.",
         caracteristicas: ["300ml", "13x más hidratación", "Ultra hidratación", "Profesional", "Leave-in"],
-        imagen: "../img/lote5/producto55.png"
+        imagen: "../img2/lote5/producto55.png"
     },
     {
         id: 56,
@@ -501,7 +501,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Tónico fortalecedor S.O.S Bomba antiqueda para combatir y prevenir la caída del cabello. Fortalece la raíz, estimula el cuero cabelludo y revitaliza los folículos. Fórmula concentrada de acción profunda que reduce significativamente la caída. Presentación de 100ml.",
         caracteristicas: ["100ml", "Tónico antiqueda", "Fortalece raíz", "Estimula folículos", "Aplicación directa"],
-        imagen: "../img/lote5/producto56.png"
+        imagen: "../img2/lote5/producto56.png"
     },
     {
         id: 57,
@@ -510,7 +510,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Tratamiento 3 en 1 Cachos dos Sonhos Multy Maravilhas. Crema de tratamiento, súper acondicionador y crema para peinar en un solo producto. Proporciona banho de brilho (baño de brillo), nutrición y textura extrema. Multiuso para todo tipo de rizos. Presentación de 1kg.",
         caracteristicas: ["1kg", "3 en 1", "Banho de brilho", "Nutrición", "Textura extrema"],
-        imagen: "../img/lote5/producto57.png"
+        imagen: "../img2/lote5/producto57.png"
     },
     {
         id: 58,
@@ -519,7 +519,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Tratamiento 3 en 1 Cachos dos Sonhos Multy Milagres (Multi Milagros). Crema de tratamiento, súper acondicionador y crema para peinar todo en uno. Proporciona antiporosidad y maciez extrema (suavidad extrema). Múltiples beneficios milagrosos para transformar los rizos. Presentación de 1kg.",
         caracteristicas: ["1kg", "3 en 1", "Antiporosidad", "Maciez extrema", "Multi beneficios"],
-        imagen: "../img/lote5/producto58.png"
+        imagen: "../img2/lote5/producto58.png"
     },
     {
         id: 59,
@@ -528,7 +528,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Tratamiento 3 en 1 Cachos dos Sonhos Multy Poderosos (Multi Poderosos). Crema de tratamiento, súper acondicionador y crema para peinar en una sola fórmula. Tratamiento hidratante y brillo luminoso para rizos poderosos y saludables. Melancia (sandía). Presentación de 1kg.",
         caracteristicas: ["1kg", "3 en 1", "Hidratación poderosa", "Brillo luminoso", "Sandía"],
-        imagen: "../img/lote5/producto59.png"
+        imagen: "../img2/lote5/producto59.png"
     },
     {
         id: 60,
@@ -537,7 +537,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Kit matizador para cabello rubio con shampoo y acondicionador cremoso. Neutraliza tonos amarillentos, anaranjados o decolorados. Matiza, cuida y proporciona brillo platinado. Fórmula profesional que mantiene el rubio perfecto y vibrante. Presentación de 300ml cada uno.",
         caracteristicas: ["Shampoo 300ml", "Acondicionador 300ml", "Matizador", "Para rubios", "Brillo platinado"],
-        imagen: "../img/lote5/producto60.png"
+        imagen: "../img2/lote5/producto60.png"
     },
     {
         id: 61,
@@ -546,7 +546,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Máscara matizadora #TodeCacho para cabello rubio. Hidrata, trata, neutraliza y matiza en un solo paso. Elimina tonos amarillentos y anaranjados mientras proporciona tratamiento intensivo. Fórmula que mantiene el rubio perfecto con hidratación profunda. Presentación de 500g.",
         caracteristicas: ["500g", "Máscara matizadora", "Para rubios", "Hidrata y matiza", "Neutraliza amarillos"],
-        imagen: "../img/lote5/producto61.png"
+        imagen: "../img2/lote5/producto61.png"
     },
     {
         id: 62,
@@ -555,7 +555,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Tratamiento 3 en 1 Cachos dos Sonhos Multy Extraordinário (Multi Extraordinario). Crema de tratamiento, súper acondicionador y crema para peinar en una fórmula. Reparación intensiva y blindagem do frizz (blindaje del frizz). Con morango (fresa). Presentación de 1kg.",
         caracteristicas: ["1kg", "3 en 1", "Reparación intensiva", "Blindaje antifrizz", "Fresa"],
-        imagen: "../img/lote5/producto62.png"
+        imagen: "../img2/lote5/producto62.png"
     },
     {
         id: 63,
@@ -564,7 +564,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Máscara matizadora #TodeCacho en tono rojo/vermelho. Hidrata, trata, neutraliza e intensifica tonos rojos. Revive el color, elimina decoloración y proporciona tratamiento profundo. Mantiene los tonos rojos vibrantes y brillantes por más tiempo. Presentación de 500g.",
         caracteristicas: ["500g", "Máscara matizadora", "Tono rojo", "Hidrata y matiza", "Intensifica color"],
-        imagen: "../img/lote5/producto63.png"
+        imagen: "../img2/lote5/producto63.png"
     },
     {
         id: 64,
@@ -573,7 +573,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Mascarilla capilar con aceite de argán para reparación y fuerza. Proporciona reconstrucción extrema y mantenimiento extranutritivo. Tratamiento intensivo que repara profundamente cabellos dañados, devolviendo fuerza, brillo y vitalidad. Fórmula concentrada profesional. Presentación de 300g.",
         caracteristicas: ["300g", "Aceite de Argán", "Reparación extrema", "Fuerza", "Mantenimiento extranutritivo"],
-        imagen: "../img/lote6/producto64.png"
+        imagen: "../img2/lote6/producto64.png"
     },
     {
         id: 65,
@@ -582,7 +582,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Set de fórmulas bifásicas Karité con dos tratamientos profesionales. Incluye versión Calming (calmante) y versión con Keratina. Fórmulas poderosas bifásicas que combinan fase acuosa y oleosa para máxima efectividad. Suaviza, nutre y repara el cabello. Productos suaves pero efectivos.",
         caracteristicas: ["Set 2 productos", "Fórmula bifásica", "Calming", "Keratin", "Profesional"],
-        imagen: "../img/lote6/producto65.png"
+        imagen: "../img2/lote6/producto65.png"
     },
     {
         id: 66,
@@ -591,7 +591,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Máscara #TodeCacho de reparación fortalecedora. Tratamiento intensivo que repara y fortalece rizos dañados, debilitados o quebradizos. Reconstruye la fibra capilar, proporciona fuerza y definición. Ideal para rizos que necesitan reparación profunda. Presentación de 300g.",
         caracteristicas: ["300g", "Reparación", "Fortalecedora", "Para rizos", "Tratamiento intensivo"],
-        imagen: "../img/lote6/producto66.png"
+        imagen: "../img2/lote6/producto66.png"
     },
     {
         id: 67,
@@ -600,7 +600,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Limpiador facial con ácido hialurónico. Limpia suavemente mientras hidrata profundamente la piel. El ácido hialurónico ayuda a retener la humedad, manteniendo la piel hidratada y fresca. Limpia sin resecar, dejando la piel suave y elástica. Presentación de 100g.",
         caracteristicas: ["100g", "Ácido Hialurónico", "Limpiador facial", "Hidratante", "Limpieza suave"],
-        imagen: "../img/lote6/producto67.png"
+        imagen: "../img2/lote6/producto67.png"
     },
     {
         id: 68,
@@ -609,7 +609,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Kit completo de rutina facial Dr. Rashel con ácido hialurónico. Incluye limpiador facial (Face Wash), sérum de ácido hialurónico y crema hidratante. Sistema completo de hidratación profunda que limpia, trata y humecta la piel. Rutina completa antienvejecimiento con máxima hidratación.",
         caracteristicas: ["Kit 3 productos", "Ácido Hialurónico", "Rutina completa", "Hidratación profunda", "Antienvejecimiento"],
-        imagen: "../img/lote6/producto68.png"
+        imagen: "../img2/lote6/producto68.png"
     },
     {
         id: 69,
@@ -618,7 +618,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Limpiador facial renovador con ácido salicílico. Limpia suavemente y exfolia, controla la grasa y combate el acné. El ácido salicílico penetra los poros, elimina impurezas y células muertas. Refresca y calma la piel. Ideal para piel grasa o con tendencia al acné. Presentación de 100g.",
         caracteristicas: ["100g", "Ácido Salicílico", "Anti-acné", "Control de grasa", "Exfoliante suave"],
-        imagen: "../img/lote6/producto69.png"
+        imagen: "../img2/lote6/producto69.png"
     },
     {
         id: 70,
@@ -627,7 +627,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Aceite facial con vitamina C y cúrcuma. Antioxidante e hidratante que ilumina el tono de la piel. La vitamina C combate los radicales libres y aclara manchas, mientras la cúrcuma tiene propiedades antiinflamatorias. Proporciona brillo natural y luminosidad a la piel.",
         caracteristicas: ["Aceite facial", "Vitamina C", "Cúrcuma", "Antioxidante", "Iluminador"],
-        imagen: "../img/lote6/producto70.png"
+        imagen: "../img2/lote6/producto70.png"
     },
     {
         id: 71,
@@ -636,7 +636,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Sérum facial premium con oro real de 24K, átomos de oro y colágeno. Fórmula lujosa antiedad que reafirma, hidrata y revitaliza la piel. El oro estimula la renovación celular, mientras el colágeno mejora la elasticidad. Sérum precioso y youthful (juvenil). Presentación de 40ml.",
         caracteristicas: ["40ml", "Oro 24K", "Colágeno", "Antiedad", "Sérum premium"],
-        imagen: "../img/lote6/producto71.png"
+        imagen: "../img2/lote6/producto71.png"
     },
     {
         id: 72,
@@ -645,7 +645,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Kit completo Dr. Rashel con ácido salicílico para tratamiento anti-acné. Incluye limpiador facial (Face Wash), sérum o tónico, y crema o gel. Sistema completo que limpia, trata y controla el acné. Reduce imperfecciones, controla grasa y minimiza poros. Tratamiento profesional completo.",
         caracteristicas: ["Kit 3 productos", "Ácido Salicílico", "Anti-acné", "Control de grasa", "Tratamiento completo"],
-        imagen: "../img/lote6/producto72.png"
+        imagen: "../img2/lote6/producto72.png"
     },
     {
         id: 73,
@@ -654,7 +654,7 @@ export const productosDB = [
         categoria: "tecnologia",
         descripcion: "Masajeador de fascia inteligente modelo JY-760. Pistola de masaje profesional para aliviar tensión muscular, reducir dolor y mejorar la circulación. Incluye múltiples cabezales intercambiables para diferentes zonas del cuerpo. Ideal para recuperación deportiva, relajación y terapia muscular. Múltiples velocidades ajustables.",
         caracteristicas: ["Pistola de masaje", "Múltiples velocidades", "Cabezales intercambiables", "Terapia muscular", "Profesional"],
-        imagen: "../img/lote6/producto73.png"
+        imagen: "../img2/lote6/producto73.png"
     },
     {
         id: 74,
@@ -663,7 +663,7 @@ export const productosDB = [
         categoria: "tecnologia",
         descripcion: "Removedor de pelusa y bolitas (lint remover) para ropa y telas. Dispositivo eléctrico que elimina eficazmente pelusa, bolitas y fibras sueltas de prendas, sofás y otras telas. Mantiene la ropa como nueva. Fácil de usar con cuchillas seguras y efectivas. Ideal para el cuidado de prendas.",
         caracteristicas: ["Removedor eléctrico", "Elimina pelusas", "Para ropa y telas", "Fácil de usar", "Cuidado de prendas"],
-        imagen: "../img/lote6/producto74.png"
+        imagen: "../img2/lote6/producto74.png"
     },
     {
         id: 75,
@@ -672,7 +672,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Set de 3 sérums capilares Nevada. Incluye Biotina con Romero (fortalece y estimula crecimiento), Ricino/Castor Oil (nutrición y crecimiento), y Aceite de Ricino con vitaminas (fuerza, prevención de caída y crecimiento). Sistema completo para fortalecer, nutrir y estimular el crecimiento del cabello.",
         caracteristicas: ["Set 3 sérums", "Biotina", "Aceite de Ricino", "Romero", "Crecimiento capilar"],
-        imagen: "../img/lote6/producto75.png"
+        imagen: "../img2/lote6/producto75.png"
     },
        {
     id: 76,
@@ -681,7 +681,7 @@ export const productosDB = [
     categoria: "belleza",
     descripcion: "Set facial hidratante con ácido hialurónico de Dr. Rashel. Incluye limpiador facial, sérum hidratante y crema humectante. Ideal para pieles secas o deshidratadas, mejora la elasticidad y suaviza líneas finas. Fórmula ligera y de rápida absorción.",
     caracteristicas: ["Ácido hialurónico", "Hidratación profunda", "Kit 3 productos", "Piel suave", "Uso diario"],
-    imagen: "../img/lote7/producto76.png"
+    imagen: "../img2/lote7/producto76.png"
 },
 {
     id: 77,
@@ -690,7 +690,7 @@ export const productosDB = [
     categoria: "tecnologia",
     descripcion: "Bocina portátil inalámbrica con diseño cilíndrico y acabado en malla gris. Ideal para exteriores, fiestas o uso personal. Sonido envolvente, conectividad Bluetooth y diseño resistente al agua.",
     caracteristicas: ["Bluetooth", "Diseño portátil", "Resistente al agua", "Sonido envolvente", "Color gris"],
-    imagen: "../img/lote7/producto77.png"
+    imagen: "../img2/lote7/producto77.png"
 },
 {
     id: 78,
@@ -699,7 +699,7 @@ export const productosDB = [
     categoria: "tecnologia",
     descripcion: "Bocina inalámbrica portátil con diseño cilíndrico en color naranja. Incluye correa para transporte, conectividad Bluetooth y resistencia al agua. Ideal para música en movimiento.",
     caracteristicas: ["Bluetooth", "Diseño portátil", "Color vibrante", "Resistente al agua", "Con correa"],
-    imagen: "../img/lote7/producto78.png"
+    imagen: "../img2/lote7/producto78.png"
 },
 {
     id: 79,
@@ -708,7 +708,7 @@ export const productosDB = [
     categoria: "tecnologia",
     descripcion: "Audífonos Bluetooth con diseño de orejas de gato, ideales para amantes del estilo kawaii. Incluyen radio FM, entrada para tarjeta TF, conexión AUX y función manos libres. Cómodos y llamativos.",
     caracteristicas: ["Bluetooth", "Orejas de gato", "FM Radio", "Entrada TF", "Diseño juvenil"],
-    imagen: "../img/lote7/producto79.png"
+    imagen: "../img2/lote7/producto79.png"
 },
 {
     id: 80,
@@ -717,7 +717,7 @@ export const productosDB = [
     categoria: "tecnologia",
     descripcion: "Bocina inalámbrica P5 Pro con capacidad de enlazar más de 100 dispositivos compatibles. Diseño resistente al agua, ideal para exteriores. Disponible en colores rojo y negro.",
     caracteristicas: ["Conectividad múltiple", "Bluetooth", "Resistente al agua", "Diseño moderno", "Alta potencia"],
-    imagen: "../img/lote7/producto80.png"
+    imagen: "../img2/lote7/producto80.png"
 },
 {
     id: 81,
@@ -726,7 +726,7 @@ export const productosDB = [
     categoria: "tecnologia",
     descripcion: "Consola portátil estilo retro con juegos clásicos integrados. Incluye salida de video para conexión a pantalla externa. Ideal para nostálgicos y amantes del gaming retro.",
     caracteristicas: ["Juegos clásicos", "Pantalla integrada", "Salida de video", "Portátil", "Diseño retro"],
-    imagen: "../img/lote7/producto81.png"
+    imagen: "../img2/lote7/producto81.png"
 },
 {
     id: 82,
@@ -735,7 +735,7 @@ export const productosDB = [
     categoria: "tecnologia",
     descripcion: "Bocina Bluetooth P5 Pro en color azul con diseño cilíndrico y luces LED. Ideal para fiestas y exteriores. Incluye cordones para transporte y resistencia al agua.",
     caracteristicas: ["Bluetooth", "Luces LED", "Diseño portátil", "Resistente al agua", "Color azul"],
-    imagen: "../img/lote7/producto82.png"
+    imagen: "../img2/lote7/producto82.png"
 },
 {
     id: 83,
@@ -744,7 +744,7 @@ export const productosDB = [
     categoria: "tecnologia",
     descripcion: "Mini impresora portátil con conectividad Bluetooth. Ideal para imprimir notas, etiquetas o fotos desde el celular. Diseño compacto y moderno, fácil de transportar.",
     caracteristicas: ["Bluetooth", "Portátil", "Impresión instantánea", "Diseño moderno", "Compatible con smartphone"],
-    imagen: "../img/lote7/producto83.png"
+    imagen: "../img2/lote7/producto83.png"
 },
 {
     id: 84,
@@ -753,7 +753,7 @@ export const productosDB = [
     categoria: "tecnologia",
     descripcion: "Plancha profesional para el cabello con recubrimiento cerámico y tecnología de calentamiento rápido. Ideal para alisar y proteger el cabello con control de temperatura.",
     caracteristicas: ["Ceramic Coating", "Control de temperatura", "Calentamiento rápido", "Diseño elegante", "Uso profesional"],
-    imagen: "../img/lote7/producto84.png"
+    imagen: "../img2/lote7/producto84.png"
 },
 {
     id: 85,
@@ -762,7 +762,7 @@ export const productosDB = [
     categoria: "tecnologia",
     descripcion: "Rizador de cabello con diseño de barril único para crear rizos definidos. Incluye peine y pinza. Ideal para peinados creativos y acabados profesionales.",
     caracteristicas: ["Rizos definidos", "Incluye accesorios", "Diseño ergonómico", "Fácil de usar", "Estilo profesional"],
-    imagen: "../img/lote7/producto85.png"
+    imagen: "../img2/lote7/producto85.png"
 },
 {
     id: 86,
@@ -771,7 +771,7 @@ export const productosDB = [
     categoria: "tecnologia",
     descripcion: "Mini impresora Bluetooth con diseño adorable de carita sonriente y orejas azules. Ideal para imprimir fotos, etiquetas o notas desde el celular. Compacta y fácil de transportar.",
     caracteristicas: ["Bluetooth", "Diseño cute", "Portátil", "Impresión instantánea", "Compatible con smartphone"],
-    imagen: "../img/lote7/producto86.png"
+    imagen: "../img2/lote7/producto86.png"
 },
 {
     id: 87,
@@ -780,7 +780,7 @@ export const productosDB = [
     categoria: "tecnologia",
     descripcion: "Espejo rectangular con luz LED integrada y botón táctil para encendido. Ideal para maquillaje o cuidado personal en ambientes con poca luz. Diseño moderno y funcional.",
     caracteristicas: ["Luz LED", "Botón táctil", "Diseño moderno", "Iluminación regulable", "Uso personal"],
-    imagen: "../img/lote7/producto87.png"
+    imagen: "../img2/lote7/producto87.png"
 },
 {
     id: 88,
@@ -789,7 +789,7 @@ export const productosDB = [
     categoria: "belleza",
     descripcion: "Primer en barra hidratante de Karité. Prepara la piel para el maquillaje, suaviza imperfecciones y proporciona cobertura ligera. Presentación compacta y fácil de aplicar.",
     caracteristicas: ["Hidratante", "Cobertura ligera", "Formato stick", "Prepara la piel", "Fácil aplicación"],
-    imagen: "../img/lote7/producto88.png"
+    imagen: "../img2/lote7/producto88.png"
 },
 {
     id: 89,
@@ -798,7 +798,7 @@ export const productosDB = [
     categoria: "belleza",
     descripcion: "Rubor líquido con acabado aterciopelado de Kiss Beauty. Textura suave y fácil de difuminar. Ideal para un look natural y duradero. Presentación compacta de 7 ml.",
     caracteristicas: ["Rubor líquido", "Acabado velvet", "Fácil de difuminar", "Look natural", "Presentación compacta"],
-    imagen: "../img/lote7/producto89.png"
+    imagen: "../img2/lote7/producto89.png"
 },
 {
     id: 90,
@@ -807,7 +807,7 @@ export const productosDB = [
     categoria: "tecnologia",
     descripcion: "Secadora de cabello con motor digital de alta velocidad. Control inteligente de temperatura para proteger el cabello. Diseño elegante y ergonómico con agarre cómodo.",
     caracteristicas: ["Motor digital", "Secado rápido", "Control de temperatura", "Diseño elegante", "Agarre cómodo"],
-    imagen: "../img/lote7/producto90.png"
+    imagen: "../img2/lote7/producto90.png"
 },
 {
     id: 91,
@@ -816,7 +816,7 @@ export const productosDB = [
     categoria: "belleza",
     descripcion: "Paleta de maquillaje multifuncional inspirada en el arte de Frida Kahlo. Contiene 20 sombras de ojos en tonos cálidos y vibrantes, 6 labiales en tonos rojos y 4 polvos compactos para contorno o base. Incluye espejo integrado y diseño exterior con ilustraciones florales y animales. Ideal para quienes buscan creatividad y expresión en su rutina de belleza.",
     caracteristicas: ["Sombras de ojos", "Labiales", "Polvos compactos", "Diseño artístico", "Con espejo"],
-    imagen: "../img/lote7/producto91.png"
+    imagen: "../img2/lote7/producto91.png"
 },
 {
     id: 92,
@@ -825,7 +825,7 @@ export const productosDB = [
     categoria: "belleza",
     descripcion: "Paleta de maquillaje Lady Lion Fantasy con diseño vibrante y artístico. Incluye variedad de sombras, rubores y labiales en tonos cálidos y neutros. Ideal para looks completos y versátiles. Presentación con espejo y empaque decorativo con ilustración de mujer y leopardo.",
     caracteristicas: ["Sombras", "Rubores", "Labiales", "Diseño artístico", "Con espejo"],
-    imagen: "../img/lote7/producto92.png"
+    imagen: "../img2/lote7/producto92.png"
 },
 {
     id: 93,
@@ -834,7 +834,7 @@ export const productosDB = [
     categoria: "belleza",
     descripcion: "Máscara de pestañas Volum' Express de Maybelline con fórmula resistente al agua. Proporciona volumen intenso y duración prolongada. Ideal para climas húmedos o uso diario sin retoques. Presentación en tubo degradado rojo-dorado.",
     caracteristicas: ["Volumen intenso", "Resistente al agua", "Larga duración", "Fórmula profesional", "Presentación compacta"],
-    imagen: "../img/lote7/producto93.png"
+    imagen: "../img2/lote7/producto93.png"
 },
 {
     id: 94,
@@ -843,7 +843,7 @@ export const productosDB = [
     categoria: "tecnologia",
     descripcion: "Audífonos inalámbricos Solo Pro con cancelación activa de ruido. Diseño ergonómico y envolvente, ideales para música, llamadas o concentración. Incluyen conectividad Bluetooth y presentación premium en caja.",
     caracteristicas: ["Cancelación de ruido", "Bluetooth", "Diseño ergonómico", "Alta fidelidad", "Presentación premium"],
-    imagen: "../img/lote7/producto94.png"
+    imagen: "../img2/lote7/producto94.png"
 },
 {
     id: 95,
@@ -852,7 +852,7 @@ export const productosDB = [
     categoria: "belleza",
     descripcion: "Kit completo de tratamiento facial Dr. Rashel con Alpha Arbutin y AHA (ácidos alfa hidroxi). Incluye limpiador facial exfoliante, sérum aclarante concentrado y crema hidratante despigmentante. Sistema profesional que aclara manchas, uniforma el tono, exfolia suavemente y proporciona luminosidad. Tratamiento completo antimanchas y antienvejecimiento.",
     caracteristicas: ["Kit 3 productos", "Alpha Arbutin", "AHA", "Antimanchas", "Tratamiento completo"],
-    imagen: "../img/lote7/producto95.png"
+    imagen: "../img2/lote7/producto95.png"
 }
 
 
