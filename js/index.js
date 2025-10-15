@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Actualizar contador de productos
     const productos_totales = document.getElementsByClassName('stat-number')[0];
     if (productos_totales) {
-        productos_totales.textContent = `+${productosDB.length}`;
+        productos_totales.textContent = `+${productosDB.length -1}`;
     }
 });
 

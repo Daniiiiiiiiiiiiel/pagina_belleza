@@ -67,15 +67,6 @@ const nuevosProductosHTML = productosAMostrar.map(producto => `
                     <h3>Descripción</h3>
                     <p>${producto.descripcion}</p>
                 </div>
-                
-                <div class="producto-caracteristicas">
-                    ${producto.caracteristicas.map(caract => `
-                        <div class="caracteristica-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>${caract}</span>
-                        </div>
-                    `).join('')}
-                </div>
             </div>
             
             <div class="producto-acciones">

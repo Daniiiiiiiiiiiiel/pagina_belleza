@@ -291,11 +291,11 @@ nav ul li a.active::after {
 
 .producto-card {
     display: grid;
-    grid-template-columns: 1fr 400px;
+    grid-template-columns: 1fr 260px;
     gap: 3rem;
     background: linear-gradient(135deg, var(--color-crema) 0%, rgba(241, 231, 213, 0.5) 100%);
     border-radius: 20px;
-    padding: 2.5rem;
+    padding: 2rem;
     position: relative;
     overflow: hidden;
     transition: all 0.4s ease;
@@ -306,8 +306,8 @@ nav ul li a.active::after {
     position: absolute;
     top: -50%;
     right: -10%;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     background: radial-gradient(circle, rgba(158, 180, 136, 0.15) 0%, transparent 70%);
     border-radius: 50%;
 }
@@ -321,7 +321,6 @@ nav ul li a.active::after {
 .producto-info-detalle {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     z-index: 2;
 }
 
@@ -364,12 +363,12 @@ nav ul li a.active::after {
     font-size: 0.95rem;
 }
 
-.producto-caracteristicas {
+/* .producto-caracteristicas {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: 1.5rem;
-}
+} */
 
 .caracteristica-item {
     display: flex;
@@ -423,7 +422,7 @@ nav ul li a.active::after {
 
 .producto-imagen-wrapper {
     position: relative;
-    width: 100%;
+    width: 80%;
     height: 400px;
     display: flex;
     align-items: center;
@@ -431,8 +430,8 @@ nav ul li a.active::after {
 }
 
 .producto-imagen-wrapper img {
-    width: 140%;
-    height: 140%;
+    width: 95%;
+    height: 95%;
     object-fit: contain;
     filter: drop-shadow(20px 20px 40px rgba(0, 0, 0, 0.25));
     transition: all 0.4s ease;
@@ -743,8 +742,7 @@ footer {
     }
     
     .producto-imagen-wrapper {
-        margin: 8lvh;
-        height: 300px;
+        height: 250px;
     }
     
     .modal-cuerpo {
@@ -852,7 +850,7 @@ footer {
     
     .producto-imagen-wrapper {
         margin: 5lvh;
-        height: 300px;
+        height: 250px;
     }
     
     /* Footer responsive - diseño mejorado */
@@ -957,7 +955,7 @@ footer {
 /* Limitar descripción a 3 líneas */
 .producto-descripcion p {
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   line-clamp: 3; /* <-- agrega esta línea */
   -webkit-box-orient: vertical;
   overflow: hidden;
