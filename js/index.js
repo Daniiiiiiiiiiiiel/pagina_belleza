@@ -157,8 +157,8 @@ function aplicarEventListenersProductos() {
                                 <div class="modal-details">
                                     ${producto.marca ? `
                                     <div class="modal-section">
-                                        <h3><i class="fas fa-tag"></i>Nombre</h3>
-                                        <p>${producto.nombre}</p>
+                                        <h3><i class="fas fa-tag"></i>Marca</h3>
+                                        <p>${producto.marca}</p>
                                     </div>
                                     ` : ''}
                                     
