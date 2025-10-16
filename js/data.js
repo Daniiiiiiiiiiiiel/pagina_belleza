@@ -330,7 +330,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Crema para peinar enriquecida con gelatina que proporciona definición extraordinaria. Hidratación, superdefinición y fijación flexible con textura gel-creme. Ideal para cabellos 2abc, 3abc y 4abc. Proporciona rizos definidos sin dejar el cabello duro o crujiente.",
         caracteristicas: ["1kg", "Gelatina", "Definición extraordinaria", "Textura gel-creme", "Para todo tipo de rizos"],
-        imagen: "../img2/lote4/producto37.png"
+        imagen: "../img/lote4/producto37.png"
     },
     {
         id: 38,
@@ -339,7 +339,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Máscara concentrada S.O.S Hidratação con aceite de oliva para tratamiento intensivo. Proporciona hidratación profunda, nutrición y restauración para cabellos resecos, porosos y dañados. Fórmula concentrada de acción rápida y eficaz. Restaura la fibra capilar desde el interior.",
         caracteristicas: ["1kg", "Aceite de Oliva", "Hidratación S.O.S", "Máscara concentrada", "Restauración intensa"],
-        imagen: "../img2/lote4/producto38.png"
+        imagen: "../img/lote4/producto38.png"
     },
     {
         id: 39,
@@ -348,7 +348,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Máscara concentrada S.O.S Hidratação con aceite de ricino para tratamiento profundo. El aceite de ricino fortalece, estimula el crecimiento y proporciona hidratación intensa. Ideal para cabellos debilitados, con caída o que necesitan fortalecimiento. Fórmula concentrada de alta eficacia.",
         caracteristicas: ["1kg", "Aceite de Ricino", "Hidratación S.O.S", "Fortalecimiento", "Máscara concentrada"],
-        imagen: "../img2/lote4/producto39.png"
+        imagen: "../img/lote4/producto39.png"
     },
     {
         id: 40,
@@ -357,7 +357,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Crema para peinar S.O.S Cachos con aceite de ricino y queratina para reparación y antifrizz. Tratamiento especializado que repara, fortalece y define rizos dañados. La combinación de ricino y queratina restaura la estructura capilar y proporciona definición duradera.",
         caracteristicas: ["1kg", "Aceite de Ricino", "Queratina", "Reparación y antifrizz", "S.O.S Cachos"],
-        imagen: "../img2/lote4/producto40.png"
+        imagen: "../img/lote4/producto40.png"
     },
     {
         id: 41,
@@ -366,7 +366,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Tratamiento Hidra con extracto de babosa (aloe vera), queratina y glicerina vegetal. Proporciona hidratación intensa, restauración profunda para cabellos dañados y quebradizos. El aloe vera calma y repara, mientras la queratina fortalece. Presentación en botella con dispensador de 1 litro.",
         caracteristicas: ["1L", "Babosa (Aloe Vera)", "Queratina", "Glicerina Vegetal", "Restauración intensa"],
-        imagen: "../img2/lote4/producto41.png"
+        imagen: "../img/lote4/producto41.png"
     },
     {
         id: 42,
@@ -375,7 +375,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Máscara concentrada S.O.S Hidratação con queratina y colágeno para hidratación intensiva. Reconstruye la fibra capilar, repara cabellos dañados y proporciona fuerza y elasticidad. Tratamiento de shock para cabellos muy dañados o procesados químicamente.",
         caracteristicas: ["1kg", "Queratina", "Colágeno", "Hidratación S.O.S", "Máscara concentrada"],
-        imagen: "../img2/lote4/producto42.png"
+        imagen: "../img/lote4/producto42.png"
     },
     {
         id: 43,
@@ -384,7 +384,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Activador de rizos #TodeCacho con reducción volumosa. Proporciona definición, control de volumen y activación de rizos naturales. Ideal para rizos tipo 3 y 4 que necesitan definición sin frizz y control de volumen. Fórmula ligera que no pesa. Presentación de 300ml.",
         caracteristicas: ["300ml", "Activador de rizos", "Reducción volumosa", "Definición sin frizz"],
-        imagen: "../img2/lote4/producto43.png"
+        imagen: "../img/lote4/producto43.png"
     },
     {
         id: 44,
@@ -393,7 +393,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Activador de rizos con recarga de queratina para reparación y brillo. Tratamiento especializado que reconstruye la fibra capilar, repara daños y proporciona definición intensa. La queratina penetra profundamente restaurando la estructura del cabello. Presentación de 500ml.",
         caracteristicas: ["500ml", "Recarga de Queratina", "Reparación y brillo", "Definición intensa"],
-        imagen: "../img2/lote4/producto44.png"
+        imagen: "../img/lote4/producto44.png"
     },
     {
         id: 45,
@@ -402,7 +402,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Activador de rizos con ácido hialurónico para hidratación y sellado. El ácido hialurónico retiene la hidratación, proporciona elasticidad y define los rizos. Tratamiento que sella las cutículas, combate el frizz y mantiene los rizos hidratados por más tiempo. Presentación de 500ml.",
         caracteristicas: ["500ml", "Ácido Hialurónico", "Hidratación y sellado", "Definición duradera"],
-        imagen: "../img2/lote4/producto45.png"
+        imagen: "../img/lote4/producto45.png"
     },
     {
         id: 46,
@@ -411,7 +411,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Activador de rizos con aceite de oliva para nutrición y antifrizz. El aceite de oliva nutre profundamente, proporciona brillo natural y suavidad extrema. Define rizos mientras protege contra el frizz y factores externos. Textura ligera que no deja el cabello pesado. Presentación de 500ml.",
         caracteristicas: ["500ml", "Aceite de Oliva", "Nutrición y antifrizz", "Brillo natural"],
-        imagen: "../img2/lote4/producto46.png"
+        imagen: "../img/lote4/producto46.png"
     },
     {
         id: 47,
@@ -420,7 +420,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Activador de rizos #TodeCacho con aceite de coco. Define intensamente, proporciona hidratación profunda y restaura el brillo natural. El aceite de coco penetra la fibra capilar nutriendo desde el interior. Ideal para rizos secos y sin vida. Presentación de 300ml.",
         caracteristicas: ["300ml", "Aceite de Coco", "Definición intensa", "Hidratación y brillo"],
-        imagen: "../img2/lote4/producto47.png"
+        imagen: "../img/lote4/producto47.png"
     },
     {
         id: 48,
@@ -429,7 +429,7 @@ export const productosDB = [
         categoria: "belleza",
         descripcion: "Activador de rizos Hidra 2 en 1 con D-Pantenol para hidratación intensa y movimiento. Fórmula que hidrata, define y proporciona movimiento natural a los rizos. El D-Pantenol retiene la humedad y mejora la elasticidad. Rizos sueltos, definidos y con vida. Presentación de 300ml.",
         caracteristicas: ["300ml", "2 en 1", "D-Pantenol", "Hidratación intensa", "Movimiento natural"],
-        imagen: "../img2/lote4/producto48.png"
+        imagen: "../img/lote4/producto48.png"
     },
         {
         id: 49,
@@ -694,7 +694,7 @@ export const productosDB = [
 },
 {
     id: 78,
-    nombre: "Mini Bocina Bluetooth Cilíndrica - Color Naranja",
+    nombre: "Mini Bocina Bluetooth Cilíndrica - Variedad de colores",
     marca: "Genérica",
     categoria: "tecnologia",
     descripcion: "Bocina inalámbrica portátil con diseño cilíndrico en color naranja. Incluye correa para transporte, conectividad Bluetooth y resistencia al agua. Ideal para música en movimiento.",
@@ -853,6 +853,123 @@ export const productosDB = [
     descripcion: "Kit completo de tratamiento facial Dr. Rashel con Alpha Arbutin y AHA (ácidos alfa hidroxi). Incluye limpiador facial exfoliante, sérum aclarante concentrado y crema hidratante despigmentante. Sistema profesional que aclara manchas, uniforma el tono, exfolia suavemente y proporciona luminosidad. Tratamiento completo antimanchas y antienvejecimiento.",
     caracteristicas: ["Kit 3 productos", "Alpha Arbutin", "AHA", "Antimanchas", "Tratamiento completo"],
     imagen: "../img2/lote7/producto95.png"
+},
+{
+  id: 96,
+  nombre: "Solo Pro Wireless Headphones",
+  marca: "Beats (Solo Pro)",
+  categoria: "tecnologia",
+  descripcion: "Audífonos inalámbricos over-ear con cancelación activa de ruido. Diseño moderno y elegante con almohadillas acolchadas para máximo confort durante uso prolongado. Disponibles en múltiples colores: negro, rojo, azul y beige/dorado. Conexión Bluetooth de alta calidad para una experiencia de audio inmersiva.",
+  caracteristicas: ["Wireless", "Cancelación de ruido", "Over-ear", "Bluetooth", "Múltiples colores"],
+  imagen: "../img2/lote8/producto96.png"
+},
+{
+  id: 97,
+  nombre: "Fashion Wireless Headset",
+  marca: "VZV-26M",
+  categoria: "tecnologia",
+  descripcion: "Audífonos inalámbricos con iluminación LED RGB en los auriculares. Diseño fashion y moderno con acabados en colores pastel y vibrantes. Cuenta con controles táctiles integrados y almohadillas suaves para uso prolongado. Disponibles en colores: gris, morado/lila, rosa, lavanda y verde menta.",
+  caracteristicas: ["Wireless", "LED RGB", "Diseño Fashion", "Controles táctiles", "Colores variados"],
+  imagen: "../img2/lote8/producto97.png"
+},
+{
+  id: 98,
+  nombre: "P47 Wireless Headphones",
+  marca: "P47 5.0+EDR",
+  categoria: "tecnologia",
+  descripcion: "Audífonos inalámbricos Bluetooth con diseño compacto y plegable. Cuenta con controles integrados en el auricular para reproducción y volumen. Combinación de colores gris y azul con almohadillas cómodas. Tecnología Bluetooth 5.0+EDR para conexión estable y de bajo consumo energético.",
+  caracteristicas: ["Bluetooth 5.0+EDR", "Plegable", "Controles integrados", "Diseño bicolor"],
+  imagen: "../img2/lote8/producto98.png"
+},
+{
+  id: 99,
+  nombre: "Naked Eyeshadow Palette",
+  marca: "NALED (Urban Style)",
+  categoria: "belleza",
+  descripcion: "Paleta de sombras para ojos con 9 tonos neutros y tierra. Incluye acabados mate, satinados y con brillo para crear looks desde naturales hasta intensos. Colores que van desde beige claro hasta marrón oscuro, perfectos para uso diario o nocturno. Empaque elegante con espejo incorporado.",
+  caracteristicas: ["9 tonos", "Acabados variados", "Tonos neutros", "Con espejo", "Versátil"],
+  imagen: "../img2/lote8/producto99.png"
+},
+{
+  id: 100,
+  nombre: "Styling Dust Matt Shades Pomade Wax",
+  marca: "AGIVA",
+  categoria: "belleza",
+  descripcion: "Polvo de peinado con acabado mate para crear volumen y textura. Fórmula de fijación extra fuerte (Extra Strong) ideal para estilos modernos y estructurados. Proporciona un acabado natural sin brillo. Perfecto para cabello corto y medio. Incluye esponja aplicadora.",
+  caracteristicas: ["Extra Strong", "Acabado mate", "Textura y volumen", "Con esponja"],
+  imagen: "../img2/lote8/producto100.png"
+},
+{
+  id: 101,
+  nombre: "Styling Hair Gel Ultra Strong",
+  marca: "AGIVA",
+  categoria: "belleza",
+  descripcion: "Gel para cabello de fijación ultra fuerte con acabado brillante. Fórmula profesional que mantiene el peinado durante todo el día sin residuos. Color azul característico en envase tipo tarro. Ideal para peinados estructurados y estilos definidos que requieren máxima fijación.",
+  caracteristicas: ["Ultra Strong", "Acabado brillante", "Larga duración", "Profesional"],
+  imagen: "../img2/lote8/producto101.png"
+},
+{
+  id: 102,
+  nombre: "Safari Dreams Eyeshadow Palette",
+  marca: "IVYLADY",
+  categoria: "belleza",
+  descripcion: "Paleta de sombras con temática animal print y tropical. Diseño artístico con ilustraciones de rostros femeninos, rosas y leopardo. Incluye variedad de tonos cálidos y vibrantes para crear looks exóticos y atrevidos. Empaque decorativo ideal como regalo o colección.",
+  caracteristicas: ["Diseño artístico", "Tonos variados", "Temática safari", "Packaging premium"],
+  imagen: "../img2/lote8/producto102.png"
+},
+{
+  id: 103,
+  nombre: "Beard Shampoo",
+  marca: "Immortal (The Imposible Barbershop)",
+  categoria: "belleza",
+  descripcion: "Champú especializado para barba que limpia profundamente mientras hidrata y suaviza el vello facial. Fórmula profesional de barbería que elimina impurezas sin resecar. Empaque dorado elegante con diseño vintage y logo de calavera característico de la marca. Producto de cuidado masculino premium.",
+  caracteristicas: ["Especializado para barba", "Limpieza profunda", "Hidratante", "Profesional"],
+  imagen: "../img2/lote8/producto103.png"
+},
+{
+  id: 104,
+  nombre: "Collagen Treatment",
+  marca: "BMC (Collagen Treatment)",
+  categoria: "belleza",
+  descripcion: "Tratamiento capilar intensivo con colágeno para reparar y fortalecer el cabello dañado. Fórmula concentrada que restaura la estructura capilar, aporta brillo y suavidad. Ideal para cabellos maltratados por químicos o calor. Presentación en tarro color ámbar con tapa negra.",
+  caracteristicas: ["Con colágeno", "Reparador", "Fortalecedor", "Tratamiento intensivo"],
+  imagen: "../img2/lote8/producto104.png"
+},
+{
+  id: 105,
+  nombre: "Collagen Hair Mask",
+  marca: "Karseell",
+  categoria: "belleza",
+  descripcion: "Mascarilla capilar enriquecida con colágeno para hidratación profunda y reparación. Fórmula tipo magic que suaviza y desenreda el cabello. Presentación en tarro de gran tamaño con tapa marrón oscuro. Tratamiento intensivo que devuelve la vitalidad y el brillo natural al cabello.",
+  caracteristicas: ["Colágeno", "Hidratación profunda", "Magic formula", "Gran tamaño"],
+  imagen: "../img2/lote8/producto105.png"
+},
+{
+  id: 106,
+  nombre: "Men's Face Scrub",
+  marca: "XtraCare",
+  categoria: "belleza",
+  descripcion: "Exfoliante facial específico para hombres que purifica y suaviza la piel. Fórmula con micropartículas que eliminan células muertas y destapan poros sin causar irritación. Presentación en tubo de 4.5 FL OZ (133 mL). Ideal para preparar la piel antes del afeitado o como parte de la rutina de cuidado facial.",
+  caracteristicas: ["Para hombres", "Exfoliante", "Purifica y suaviza", "4.5 FL OZ"],
+  imagen: "../img2/lote8/producto106.png"
+},
+{
+  id: 107,
+  nombre: "Maca Power Shampoo & Conditioner Set",
+  marca: "Karseell (Maca Power)",
+  categoria: "belleza",
+  descripcion: "Set de champú y acondicionador con extracto de maca. El champú proporciona hidratación (Moisture) y el acondicionador ofrece reparación (Repair). Presentación en botellas tipo pump de 500ml cada una. Sistema completo para limpieza, hidratación y reparación del cabello. Combina proteínas y péptidos para resultados profesionales.",
+  caracteristicas: ["Set 2 piezas", "Con maca", "500ml c/u", "Hidrata y repara", "Sistema completo"],
+  imagen: "../img2/lote8/producto107.png"
+},
+{
+  id: 108,
+  nombre: "Maca Essence Nut Oil",
+  marca: "Karseell (Maca Power)",
+  categoria: "belleza",
+  descripcion: "Aceite nutritivo para cabello con esencia de maca y nueces. Tratamiento sin enjuague que nutre, suaviza y aporta brillo. Presentación en caja con ventana que muestra el producto. Fórmula concentrada que repara puntas y controla el frizz. Ideal para uso diario en cabello seco o dañado.",
+  caracteristicas: ["Aceite de maca", "Sin enjuague", "Nutritivo", "Control de frizz"],
+  imagen: "../img2/lote8/producto108.png"
 }
 
 

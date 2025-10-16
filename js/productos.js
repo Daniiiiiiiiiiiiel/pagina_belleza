@@ -1,9 +1,8 @@
 import { productosDB } from './data.js';
 
-
 // Variables globales
 let productosFiltrados = [...productosDB];
-let productosMostrados = 0;
+let paginaActual = 0;
 const PRODUCTOS_POR_PAGINA = 10;
 
 // Inicialización
@@ -25,18 +24,15 @@ function renderizarProductos(productos, reiniciar = false) {
     const contenedor = document.getElementById('productos-lista');
     const countElement = document.getElementById('count');
     
-    // Si es reinicio, resetear el contador y limpiar el contenedor
+    // Si es reinicio, resetear la página actual
     if (reiniciar) {
-        productosMostrados = 0;
-        contenedor.innerHTML = '';
-        // Eliminar botón "Ver más" si existe
-        const btnExistente = document.getElementById('btn-ver-mas-productos');
-        if (btnExistente) {
-            btnExistente.remove();
-        }
+        paginaActual = 0;
     }
     
     countElement.textContent = productos.length;
+    
+    // Limpiar contenedor siempre (solo mostramos productos de la página actual)
+    contenedor.innerHTML = '';
     
     if (productos.length === 0) {
         contenedor.innerHTML = `
@@ -46,52 +42,54 @@ function renderizarProductos(productos, reiniciar = false) {
                 <p>Intenta ajustar los filtros de búsqueda</p>
             </div>
         `;
+        // Eliminar controles de navegación si existen
+        const controlesExistentes = document.getElementById('controles-paginacion');
+        if (controlesExistentes) {
+            controlesExistentes.remove();
+        }
         return;
     }
     
-    // Calcular qué productos mostrar
-    const inicio = productosMostrados;
-    const fin = Math.min(productosMostrados + PRODUCTOS_POR_PAGINA, productos.length);
+    // Calcular qué productos mostrar de la página actual
+    const inicio = paginaActual * PRODUCTOS_POR_PAGINA;
+    const fin = Math.min(inicio + PRODUCTOS_POR_PAGINA, productos.length);
     const productosAMostrar = productos.slice(inicio, fin);
     
-// En la función renderizarProductos, agregar la marca en el HTML
-const nuevosProductosHTML = productosAMostrar.map(producto => `
-    <div class="producto-card" data-id="${producto.id}" data-categoria="${producto.categoria}">
-        <div class="producto-info-detalle">
-            <div>
-                <span class="producto-categoria">${producto.categoria === 'belleza' ? 'Belleza' : 'Tecnología'}</span>
-                <span class="producto-marca">${producto.marca}</span>
-                <h2 class="producto-titulo">${producto.nombre}</h2>
+    // Renderizar productos de la página actual
+    const productosHTML = productosAMostrar.map(producto => `
+        <div class="producto-card" data-id="${producto.id}" data-categoria="${producto.categoria}">
+            <div class="producto-info-detalle">
+                <div>
+                    <span class="producto-categoria">${producto.categoria === 'belleza' ? 'Belleza' : 'Tecnología'}</span>
+                    <span class="producto-marca">${producto.marca}</span>
+                    <h2 class="producto-titulo">${producto.nombre}</h2>
+                    
+                    <div class="producto-descripcion">
+                        <h3>Descripción</h3>
+                        <p>${producto.descripcion}</p>
+                    </div>
+                </div>
                 
-                <div class="producto-descripcion">
-                    <h3>Descripción</h3>
-                    <p>${producto.descripcion}</p>
+                <div class="producto-acciones">
+                    <button class="btn-ver-mas" data-id="${producto.id}">
+                        <i class="fas fa-info-circle"></i>
+                        Ver más detalles
+                    </button>
                 </div>
             </div>
             
-            <div class="producto-acciones">
-                <button class="btn-ver-mas" data-id="${producto.id}">
-                    <i class="fas fa-info-circle"></i>
-                    Ver más detalles
-                </button>
+            <div class="producto-imagen-container">
+                <div class="producto-imagen-wrapper">
+                    <img src="${producto.imagen}" loading="lazy" alt="${producto.nombre}">
+                </div>
             </div>
         </div>
-        
-        <div class="producto-imagen-container">
-            <div class="producto-imagen-wrapper">
-                <img src="${producto.imagen}" loading="lazy" alt="${producto.nombre}">
-            </div>
-        </div>
-    </div>
-`).join('');
+    `).join('');
     
-    contenedor.insertAdjacentHTML('beforeend', nuevosProductosHTML);
+    contenedor.innerHTML = productosHTML;
     
-    // Actualizar contador de productos mostrados
-    productosMostrados = fin;
-    
-    // Agregar o actualizar botón "Ver más"
-    gestionarBotonVerMas(productos);
+    // Gestionar controles de navegación
+    gestionarControlesPaginacion(productos);
     
     // Agregar eventos a botones "Ver más"
     document.querySelectorAll('.btn-ver-mas').forEach(btn => {
@@ -103,62 +101,77 @@ const nuevosProductosHTML = productosAMostrar.map(producto => `
     
     // Animación de entrada
     animarProductos();
+    
+    // Scroll al inicio del catálogo
+    const catalogoMain = document.querySelector('.catalogo-main');
+    if (catalogoMain && !reiniciar) {
+        catalogoMain.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
 }
 
-// Gestionar botón "Ver más productos"
-function gestionarBotonVerMas(productos) {
-    // Buscar si ya existe el botón
-    let btnVerMas = document.getElementById('btn-ver-mas-productos');
+// Gestionar controles de paginación
+function gestionarControlesPaginacion(productos) {
+    const totalPaginas = Math.ceil(productos.length / PRODUCTOS_POR_PAGINA);
     
-    // Si ya mostramos todos los productos, eliminar el botón
-    if (productosMostrados >= productos.length) {
-        if (btnVerMas) {
-            btnVerMas.remove();
+    // Si solo hay una página, no mostrar controles
+    if (totalPaginas <= 1) {
+        const controlesExistentes = document.getElementById('controles-paginacion');
+        if (controlesExistentes) {
+            controlesExistentes.remove();
         }
         return;
     }
     
-    // Si no existe el botón, crearlo
-    if (!btnVerMas) {
+    // Buscar si ya existen los controles
+    let controles = document.getElementById('controles-paginacion');
+    
+    // Si no existen, crearlos
+    if (!controles) {
         const contenedorCatalogo = document.querySelector('.catalogo-main');
-        btnVerMas = document.createElement('div');
-        btnVerMas.id = 'btn-ver-mas-productos';
-        btnVerMas.className = 'contenedor-ver-mas';
-        btnVerMas.innerHTML = `
-            <button class="btn-ver-mas-productos">
-                <i class="fas fa-chevron-down"></i>
-                Ver más productos
-                <span class="productos-restantes">(${productos.length - productosMostrados} restantes)</span>
-            </button>
-        `;
-        contenedorCatalogo.appendChild(btnVerMas);
+        controles = document.createElement('div');
+        controles.id = 'controles-paginacion';
+        controles.className = 'controles-paginacion';
+        contenedorCatalogo.appendChild(controles);
+    }
+    
+    // Actualizar contenido de los controles
+    const inicio = paginaActual * PRODUCTOS_POR_PAGINA + 1;
+    const fin = Math.min((paginaActual + 1) * PRODUCTOS_POR_PAGINA, productos.length);
+    
+    controles.innerHTML = `
+        <button class="btn-paginacion btn-anterior" ${paginaActual === 0 ? 'disabled' : ''}>
+            <i class="fas fa-chevron-left"></i>
+            Anterior
+        </button>
         
-        // Agregar evento al botón
-        btnVerMas.querySelector('.btn-ver-mas-productos').addEventListener('click', function() {
-            cargarMasProductos();
-        });
-    } else {
-        // Actualizar el contador de productos restantes
-        const span = btnVerMas.querySelector('.productos-restantes');
-        if (span) {
-            span.textContent = `(${productos.length - productosMostrados} restantes)`;
+        <div class="info-paginacion">
+            <span class="pagina-actual">Mostrando ${inicio} - ${fin} de ${productos.length} productos</span>
+            <span class="numero-pagina">Página ${paginaActual + 1} de ${totalPaginas}</span>
+        </div>
+        
+        <button class="btn-paginacion btn-siguiente" ${paginaActual >= totalPaginas - 1 ? 'disabled' : ''}>
+            Siguiente
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    `;
+    
+    // Agregar eventos a los botones
+    const btnAnterior = controles.querySelector('.btn-anterior');
+    const btnSiguiente = controles.querySelector('.btn-siguiente');
+    
+    btnAnterior.addEventListener('click', function() {
+        if (paginaActual > 0) {
+            paginaActual--;
+            renderizarProductos(productosFiltrados, false);
         }
-    }
-}
-
-// Cargar más productos
-function cargarMasProductos() {
-    renderizarProductos(productosFiltrados, false);
+    });
     
-    // Scroll suave hacia los nuevos productos
-    const todosLosProductos = document.querySelectorAll('.producto-card');
-    const ultimoProductoAnterior = todosLosProductos[productosMostrados - PRODUCTOS_POR_PAGINA];
-    
-    if (ultimoProductoAnterior) {
-        setTimeout(() => {
-            ultimoProductoAnterior.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }, 100);
-    }
+    btnSiguiente.addEventListener('click', function() {
+        if (paginaActual < totalPaginas - 1) {
+            paginaActual++;
+            renderizarProductos(productosFiltrados, false);
+        }
+    });
 }
 
 // Configurar filtros
@@ -353,17 +366,17 @@ function configurarMenuMobile() {
 }
 
 // Newsletter
-// function configurarNewsletter() {
-//     const form = document.querySelector('.newsletter-form');
-//     if (form) {
-//         form.addEventListener('submit', function(e) {
-//             e.preventDefault();
-//             const email = this.querySelector('input[type="email"]').value;
-//             alert(`¡Gracias por suscribirte con el email: ${email}!`);
-//             this.reset();
-//         });
-//     }
-// }
+function configurarNewsletter() {
+    const form = document.querySelector('.newsletter-form');
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            alert(`¡Gracias por suscribirte con el email: ${email}!`);
+            this.reset();
+        });
+    }
+}
 
 // Cambiar estilo del header al hacer scroll
 window.addEventListener('scroll', function() {
