@@ -647,24 +647,24 @@ export const productosDB = [
         caracteristicas: ["Kit 3 productos", "Ácido Salicílico", "Anti-acné", "Control de grasa", "Tratamiento completo"],
         imagen: "../img2/lote6/producto72.png"
     },
-    {
-        id: 73,
-        nombre: "Smart Fascia Massager JY-760",
-        marca: "Smart Fascia",
-        categoria: "tecnologia",
-        descripcion: "Masajeador de fascia inteligente modelo JY-760. Pistola de masaje profesional para aliviar tensión muscular, reducir dolor y mejorar la circulación. Incluye múltiples cabezales intercambiables para diferentes zonas del cuerpo. Ideal para recuperación deportiva, relajación y terapia muscular. Múltiples velocidades ajustables.",
-        caracteristicas: ["Pistola de masaje", "Múltiples velocidades", "Cabezales intercambiables", "Terapia muscular", "Profesional"],
-        imagen: "../img2/lote6/producto73.png"
-    },
-    {
-        id: 74,
-        nombre: "Hair Ball Trimmer - Lint Remover",
-        marca: "Hair Ball Trimmer",
-        categoria: "tecnologia",
-        descripcion: "Removedor de pelusa y bolitas (lint remover) para ropa y telas. Dispositivo eléctrico que elimina eficazmente pelusa, bolitas y fibras sueltas de prendas, sofás y otras telas. Mantiene la ropa como nueva. Fácil de usar con cuchillas seguras y efectivas. Ideal para el cuidado de prendas.",
-        caracteristicas: ["Removedor eléctrico", "Elimina pelusas", "Para ropa y telas", "Fácil de usar", "Cuidado de prendas"],
-        imagen: "../img2/lote6/producto74.png"
-    },
+    // {
+    //     id: 73,
+    //     nombre: "Smart Fascia Massager JY-760",
+    //     marca: "Smart Fascia",
+    //     categoria: "tecnologia",
+    //     descripcion: "Masajeador de fascia inteligente modelo JY-760. Pistola de masaje profesional para aliviar tensión muscular, reducir dolor y mejorar la circulación. Incluye múltiples cabezales intercambiables para diferentes zonas del cuerpo. Ideal para recuperación deportiva, relajación y terapia muscular. Múltiples velocidades ajustables.",
+    //     caracteristicas: ["Pistola de masaje", "Múltiples velocidades", "Cabezales intercambiables", "Terapia muscular", "Profesional"],
+    //     imagen: "../img2/lote6/producto73.png"
+    // },
+    // {
+    //     id: 74,
+    //     nombre: "Hair Ball Trimmer - Lint Remover",
+    //     marca: "Hair Ball Trimmer",
+    //     categoria: "tecnologia",
+    //     descripcion: "Removedor de pelusa y bolitas (lint remover) para ropa y telas. Dispositivo eléctrico que elimina eficazmente pelusa, bolitas y fibras sueltas de prendas, sofás y otras telas. Mantiene la ropa como nueva. Fácil de usar con cuchillas seguras y efectivas. Ideal para el cuidado de prendas.",
+    //     caracteristicas: ["Removedor eléctrico", "Elimina pelusas", "Para ropa y telas", "Fácil de usar", "Cuidado de prendas"],
+    //     imagen: "../img2/lote6/producto74.png"
+    // },
     {
         id: 75,
         nombre: "Set Serum Nevada - Biotina, Ricino y Romero",
@@ -683,97 +683,96 @@ export const productosDB = [
         caracteristicas: ["Ácido hialurónico", "Hidratación profunda", "Kit 3 productos", "Piel suave", "Uso diario"],
         imagen: "../img2/lote7/producto76.png"
     },
-    {
-        id: 77,
-        nombre: "Mini Bocina Bluetooth Cilíndrica - Color Gris",
-        marca: "Genérica",
-        categoria: "tecnologia",
-        descripcion: "Bocina portátil inalámbrica con diseño cilíndrico y acabado en malla gris. Ideal para exteriores, fiestas o uso personal. Sonido envolvente, conectividad Bluetooth y diseño resistente al agua.",
-        caracteristicas: ["Bluetooth", "Diseño portátil", "Resistente al agua", "Sonido envolvente", "Color gris"],
-        imagen: "../img2/lote7/producto77.png"
-    },
-    {
-        id: 78,
-        nombre: "Mini Bocina Bluetooth Cilíndrica - Variedad de colores",
-        marca: "Genérica",
-        categoria: "tecnologia",
-        descripcion: "Bocina inalámbrica portátil con diseño cilíndrico en color naranja. Incluye correa para transporte, conectividad Bluetooth y resistencia al agua. Ideal para música en movimiento.",
-        caracteristicas: ["Bluetooth", "Diseño portátil", "Color vibrante", "Resistente al agua", "Con correa"],
-        imagen: "../img2/lote7/producto78.png"
-    },
-    {
-        id: 79,
-        nombre: "Audífonos Inalámbricos con Orejas de Gato - Estilo Anime",
-        marca: "Genérica",
-        categoria: "tecnologia",
-        descripcion: "Audífonos Bluetooth con diseño de orejas de gato, ideales para amantes del estilo kawaii. Incluyen radio FM, entrada para tarjeta TF, conexión AUX y función manos libres. Cómodos y llamativos.",
-        caracteristicas: ["Bluetooth", "Orejas de gato", "FM Radio", "Entrada TF", "Diseño juvenil"],
-        imagen: "../img2/lote7/producto79.png"
-    },
-    {
-        id: 80,
-        nombre: "Bocina P5 Pro - Conectividad Múltiple y Resistencia al Agua",
-        marca: "P5 Pro",
-        categoria: "tecnologia",
-        descripcion: "Bocina inalámbrica P5 Pro con capacidad de enlazar más de 100 dispositivos compatibles. Diseño resistente al agua, ideal para exteriores. Disponible en colores rojo y negro.",
-        caracteristicas: ["Conectividad múltiple", "Bluetooth", "Resistente al agua", "Diseño moderno", "Alta potencia"],
-        imagen: "../img2/lote7/producto80.png"
-    },
-    {
-        id: 81,
-        nombre: "Consola Retro Sup - Conectividad a Pantalla",
-        marca: "Sup",
-        categoria: "tecnologia",
-        descripcion: "Consola portátil estilo retro con juegos clásicos integrados. Incluye salida de video para conexión a pantalla externa. Ideal para nostálgicos y amantes del gaming retro.",
-        caracteristicas: ["Juegos clásicos", "Pantalla integrada", "Salida de video", "Portátil", "Diseño retro"],
-        imagen: "../img2/lote7/producto81.png"
-    },
-    {
-
-        id: 83,
-        nombre: "Mini Impresora BT - Diseño Compacto y Portátil",
-        marca: "Genérica",
-        categoria: "tecnologia",
-        descripcion: "Mini impresora portátil con conectividad Bluetooth. Ideal para imprimir notas, etiquetas o fotos desde el celular. Diseño compacto y moderno, fácil de transportar.",
-        caracteristicas: ["Bluetooth", "Portátil", "Impresión instantánea", "Diseño moderno", "Compatible con smartphone"],
-        imagen: "../img2/lote7/producto83.png"
-    },
-    {
-        id: 84,
-        nombre: "Plancha de Cabello SIMAY SEN - Keratin Deluxe",
-        marca: "SIMAY SEN",
-        categoria: "tecnologia",
-        descripcion: "Plancha profesional para el cabello con recubrimiento cerámico y tecnología de calentamiento rápido. Ideal para alisar y proteger el cabello con control de temperatura.",
-        caracteristicas: ["Ceramic Coating", "Control de temperatura", "Calentamiento rápido", "Diseño elegante", "Uso profesional"],
-        imagen: "../img2/lote7/producto84.png"
-    },
-    {
-        id: 85,
-        nombre: "Rizador de Cabello SIKIYSEN - Diamond Curls",
-        marca: "SIKIYSEN",
-        categoria: "tecnologia",
-        descripcion: "Rizador de cabello con diseño de barril único para crear rizos definidos. Incluye peine y pinza. Ideal para peinados creativos y acabados profesionales.",
-        caracteristicas: ["Rizos definidos", "Incluye accesorios", "Diseño ergonómico", "Fácil de usar", "Estilo profesional"],
-        imagen: "../img2/lote7/producto85.png"
-    },
-    {
-        id: 86,
-        nombre: "Mini Impresora BT - Diseño Cute con Carita",
-        marca: "Genérica",
-        categoria: "tecnologia",
-        descripcion: "Mini impresora Bluetooth con diseño adorable de carita sonriente y orejas azules. Ideal para imprimir fotos, etiquetas o notas desde el celular. Compacta y fácil de transportar.",
-        caracteristicas: ["Bluetooth", "Diseño cute", "Portátil", "Impresión instantánea", "Compatible con smartphone"],
-        imagen: "../img2/lote7/producto86.png"
-    },
-    {
-        id: 87,
-        nombre: "Espejo LED con Botón Táctil - Iluminación Regulable",
-        marca: "Genérica",
-        categoria: "tecnologia",
-        descripcion: "Espejo rectangular con luz LED integrada y botón táctil para encendido. Ideal para maquillaje o cuidado personal en ambientes con poca luz. Diseño moderno y funcional.",
-        caracteristicas: ["Luz LED", "Botón táctil", "Diseño moderno", "Iluminación regulable", "Uso personal"],
-        imagen: "../img2/lote7/producto87.png"
-    },
+    // {
+    //     id: 77,
+    //     nombre: "Mini Bocina Bluetooth Cilíndrica - Color Gris",
+    //     marca: "Genérica",
+    //     categoria: "tecnologia",
+    //     descripcion: "Bocina portátil inalámbrica con diseño cilíndrico y acabado en malla gris. Ideal para exteriores, fiestas o uso personal. Sonido envolvente, conectividad Bluetooth y diseño resistente al agua.",
+    //     caracteristicas: ["Bluetooth", "Diseño portátil", "Resistente al agua", "Sonido envolvente", "Color gris"],
+    //     imagen: "../img2/lote7/producto77.png"
+    // },
+    // {
+    //     id: 78,
+    //     nombre: "Mini Bocina Bluetooth Cilíndrica - Variedad de colores",
+    //     marca: "Genérica",
+    //     categoria: "tecnologia",
+    //     descripcion: "Bocina inalámbrica portátil con diseño cilíndrico en color naranja. Incluye correa para transporte, conectividad Bluetooth y resistencia al agua. Ideal para música en movimiento.",
+    //     caracteristicas: ["Bluetooth", "Diseño portátil", "Color vibrante", "Resistente al agua", "Con correa"],
+    //     imagen: "../img2/lote7/producto78.png"
+    // },
+    // {
+    //     id: 79,
+    //     nombre: "Audífonos Inalámbricos con Orejas de Gato - Estilo Anime",
+    //     marca: "Genérica",
+    //     categoria: "tecnologia",
+    //     descripcion: "Audífonos Bluetooth con diseño de orejas de gato, ideales para amantes del estilo kawaii. Incluyen radio FM, entrada para tarjeta TF, conexión AUX y función manos libres. Cómodos y llamativos.",
+    //     caracteristicas: ["Bluetooth", "Orejas de gato", "FM Radio", "Entrada TF", "Diseño juvenil"],
+    //     imagen: "../img2/lote7/producto79.png"
+    // },
+    // {
+    //     id: 80,
+    //     nombre: "Bocina P5 Pro - Conectividad Múltiple y Resistencia al Agua",
+    //     marca: "P5 Pro",
+    //     categoria: "tecnologia",
+    //     descripcion: "Bocina inalámbrica P5 Pro con capacidad de enlazar más de 100 dispositivos compatibles. Diseño resistente al agua, ideal para exteriores. Disponible en colores rojo y negro.",
+    //     caracteristicas: ["Conectividad múltiple", "Bluetooth", "Resistente al agua", "Diseño moderno", "Alta potencia"],
+    //     imagen: "../img2/lote7/producto80.png"
+    // },
+    // {
+    //     id: 81,
+    //     nombre: "Consola Retro Sup - Conectividad a Pantalla",
+    //     marca: "Sup",
+    //     categoria: "tecnologia",
+    //     descripcion: "Consola portátil estilo retro con juegos clásicos integrados. Incluye salida de video para conexión a pantalla externa. Ideal para nostálgicos y amantes del gaming retro.",
+    //     caracteristicas: ["Juegos clásicos", "Pantalla integrada", "Salida de video", "Portátil", "Diseño retro"],
+    //     imagen: "../img2/lote7/producto81.png"
+    // },
+    // {
+    //     id: 83,
+    //     nombre: "Mini Impresora BT - Diseño Compacto y Portátil",
+    //     marca: "Genérica",
+    //     categoria: "tecnologia",
+    //     descripcion: "Mini impresora portátil con conectividad Bluetooth. Ideal para imprimir notas, etiquetas o fotos desde el celular. Diseño compacto y moderno, fácil de transportar.",
+    //     caracteristicas: ["Bluetooth", "Portátil", "Impresión instantánea", "Diseño moderno", "Compatible con smartphone"],
+    //     imagen: "../img2/lote7/producto83.png"
+    // },
+    // {
+    //     id: 84,
+    //     nombre: "Plancha de Cabello SIMAY SEN - Keratin Deluxe",
+    //     marca: "SIMAY SEN",
+    //     categoria: "tecnologia",
+    //     descripcion: "Plancha profesional para el cabello con recubrimiento cerámico y tecnología de calentamiento rápido. Ideal para alisar y proteger el cabello con control de temperatura.",
+    //     caracteristicas: ["Ceramic Coating", "Control de temperatura", "Calentamiento rápido", "Diseño elegante", "Uso profesional"],
+    //     imagen: "../img2/lote7/producto84.png"
+    // },
+    // {
+    //     id: 85,
+    //     nombre: "Rizador de Cabello SIKIYSEN - Diamond Curls",
+    //     marca: "SIKIYSEN",
+    //     categoria: "tecnologia",
+    //     descripcion: "Rizador de cabello con diseño de barril único para crear rizos definidos. Incluye peine y pinza. Ideal para peinados creativos y acabados profesionales.",
+    //     caracteristicas: ["Rizos definidos", "Incluye accesorios", "Diseño ergonómico", "Fácil de usar", "Estilo profesional"],
+    //     imagen: "../img2/lote7/producto85.png"
+    // },
+    // {
+    //     id: 86,
+    //     nombre: "Mini Impresora BT - Diseño Cute con Carita",
+    //     marca: "Genérica",
+    //     categoria: "tecnologia",
+    //     descripcion: "Mini impresora Bluetooth con diseño adorable de carita sonriente y orejas azules. Ideal para imprimir fotos, etiquetas o notas desde el celular. Compacta y fácil de transportar.",
+    //     caracteristicas: ["Bluetooth", "Diseño cute", "Portátil", "Impresión instantánea", "Compatible con smartphone"],
+    //     imagen: "../img2/lote7/producto86.png"
+    // },
+    // {
+    //     id: 87,
+    //     nombre: "Espejo LED con Botón Táctil - Iluminación Regulable",
+    //     marca: "Genérica",
+    //     categoria: "tecnologia",
+    //     descripcion: "Espejo rectangular con luz LED integrada y botón táctil para encendido. Ideal para maquillaje o cuidado personal en ambientes con poca luz. Diseño moderno y funcional.",
+    //     caracteristicas: ["Luz LED", "Botón táctil", "Diseño moderno", "Iluminación regulable", "Uso personal"],
+    //     imagen: "../img2/lote7/producto87.png"
+    // },
     {
         id: 88,
         nombre: "Primer Stick Hidratante Karité - Base de Maquillaje",
@@ -792,15 +791,15 @@ export const productosDB = [
         caracteristicas: ["Rubor líquido", "Acabado velvet", "Fácil de difuminar", "Look natural", "Presentación compacta"],
         imagen: "../img2/lote7/producto89.png"
     },
-    {
-        id: 90,
-        nombre: "Secadora de Cabello Super Fast Dryer - Motor Digital",
-        marca: "Genérica",
-        categoria: "tecnologia",
-        descripcion: "Secadora de cabello con motor digital de alta velocidad. Control inteligente de temperatura para proteger el cabello. Diseño elegante y ergonómico con agarre cómodo.",
-        caracteristicas: ["Motor digital", "Secado rápido", "Control de temperatura", "Diseño elegante", "Agarre cómodo"],
-        imagen: "../img2/lote7/producto90.png"
-    },
+    // {
+    //     id: 90,
+    //     nombre: "Secadora de Cabello Super Fast Dryer - Motor Digital",
+    //     marca: "Genérica",
+    //     categoria: "tecnologia",
+    //     descripcion: "Secadora de cabello con motor digital de alta velocidad. Control inteligente de temperatura para proteger el cabello. Diseño elegante y ergonómico con agarre cómodo.",
+    //     caracteristicas: ["Motor digital", "Secado rápido", "Control de temperatura", "Diseño elegante", "Agarre cómodo"],
+    //     imagen: "../img2/lote7/producto90.png"
+    // },
     {
         id: 91,
         nombre: "Paleta de Maquillaje Frida Kahlo - Edición Artística",
@@ -828,15 +827,15 @@ export const productosDB = [
         caracteristicas: ["Volumen intenso", "Resistente al agua", "Larga duración", "Fórmula profesional", "Presentación compacta"],
         imagen: "../img2/lote7/producto93.png"
     },
-    {
-        id: 94,
-        nombre: "Audífonos Solo Pro BT0004MS - Cancelación de Ruido Activa",
-        marca: "Solo Pro",
-        categoria: "tecnologia",
-        descripcion: "Audífonos inalámbricos Solo Pro con cancelación activa de ruido. Diseño ergonómico y envolvente, ideales para música, llamadas o concentración. Incluyen conectividad Bluetooth y presentación premium en caja.",
-        caracteristicas: ["Cancelación de ruido", "Bluetooth", "Diseño ergonómico", "Alta fidelidad", "Presentación premium"],
-        imagen: "../img2/lote7/producto94.png"
-    },
+    // {
+    //     id: 94,
+    //     nombre: "Audífonos Solo Pro BT0004MS - Cancelación de Ruido Activa",
+    //     marca: "Solo Pro",
+    //     categoria: "tecnologia",
+    //     descripcion: "Audífonos inalámbricos Solo Pro con cancelación activa de ruido. Diseño ergonómico y envolvente, ideales para música, llamadas o concentración. Incluyen conectividad Bluetooth y presentación premium en caja.",
+    //     caracteristicas: ["Cancelación de ruido", "Bluetooth", "Diseño ergonómico", "Alta fidelidad", "Presentación premium"],
+    //     imagen: "../img2/lote7/producto94.png"
+    // },
     {
         id: 95,
         nombre: "Kit Dr. Rashel Alpha Arbutin + AHA - Tratamiento Completo",
@@ -846,33 +845,33 @@ export const productosDB = [
         caracteristicas: ["Kit 3 productos", "Alpha Arbutin", "AHA", "Antimanchas", "Tratamiento completo"],
         imagen: "../img2/lote7/producto95.png"
     },
-    {
-        id: 96,
-        nombre: "Solo Pro Wireless Headphones",
-        marca: "Beats (Solo Pro)",
-        categoria: "tecnologia",
-        descripcion: "Audífonos inalámbricos over-ear con cancelación activa de ruido. Diseño moderno y elegante con almohadillas acolchadas para máximo confort durante uso prolongado. Disponibles en múltiples colores: negro, rojo, azul y beige/dorado. Conexión Bluetooth de alta calidad para una experiencia de audio inmersiva.",
-        caracteristicas: ["Wireless", "Cancelación de ruido", "Over-ear", "Bluetooth", "Múltiples colores"],
-        imagen: "../img2/lote8/producto96.png"
-    },
-    {
-        id: 97,
-        nombre: "Fashion Wireless Headset",
-        marca: "VZV-26M",
-        categoria: "tecnologia",
-        descripcion: "Audífonos inalámbricos con iluminación LED RGB en los auriculares. Diseño fashion y moderno con acabados en colores pastel y vibrantes. Cuenta con controles táctiles integrados y almohadillas suaves para uso prolongado. Disponibles en colores: gris, morado/lila, rosa, lavanda y verde menta.",
-        caracteristicas: ["Wireless", "LED RGB", "Diseño Fashion", "Controles táctiles", "Colores variados"],
-        imagen: "../img2/lote8/producto97.png"
-    },
-    {
-        id: 98,
-        nombre: "P47 Wireless Headphones",
-        marca: "P47 5.0+EDR",
-        categoria: "tecnologia",
-        descripcion: "Audífonos inalámbricos Bluetooth con diseño compacto y plegable. Cuenta con controles integrados en el auricular para reproducción y volumen. Combinación de colores gris y azul con almohadillas cómodas. Tecnología Bluetooth 5.0+EDR para conexión estable y de bajo consumo energético.",
-        caracteristicas: ["Bluetooth 5.0+EDR", "Plegable", "Controles integrados", "Diseño bicolor"],
-        imagen: "../img2/lote8/producto98.png"
-    },
+    // {
+    //     id: 96,
+    //     nombre: "Solo Pro Wireless Headphones",
+    //     marca: "Beats (Solo Pro)",
+    //     categoria: "tecnologia",
+    //     descripcion: "Audífonos inalámbricos over-ear con cancelación activa de ruido. Diseño moderno y elegante con almohadillas acolchadas para máximo confort durante uso prolongado. Disponibles en múltiples colores: negro, rojo, azul y beige/dorado. Conexión Bluetooth de alta calidad para una experiencia de audio inmersiva.",
+    //     caracteristicas: ["Wireless", "Cancelación de ruido", "Over-ear", "Bluetooth", "Múltiples colores"],
+    //     imagen: "../img2/lote8/producto96.png"
+    // },
+    // {
+    //     id: 97,
+    //     nombre: "Fashion Wireless Headset",
+    //     marca: "VZV-26M",
+    //     categoria: "tecnologia",
+    //     descripcion: "Audífonos inalámbricos con iluminación LED RGB en los auriculares. Diseño fashion y moderno con acabados en colores pastel y vibrantes. Cuenta con controles táctiles integrados y almohadillas suaves para uso prolongado. Disponibles en colores: gris, morado/lila, rosa, lavanda y verde menta.",
+    //     caracteristicas: ["Wireless", "LED RGB", "Diseño Fashion", "Controles táctiles", "Colores variados"],
+    //     imagen: "../img2/lote8/producto97.png"
+    // },
+    // {
+    //     id: 98,
+    //     nombre: "P47 Wireless Headphones",
+    //     marca: "P47 5.0+EDR",
+    //     categoria: "tecnologia",
+    //     descripcion: "Audífonos inalámbricos Bluetooth con diseño compacto y plegable. Cuenta con controles integrados en el auricular para reproducción y volumen. Combinación de colores gris y azul con almohadillas cómodas. Tecnología Bluetooth 5.0+EDR para conexión estable y de bajo consumo energético.",
+    //     caracteristicas: ["Bluetooth 5.0+EDR", "Plegable", "Controles integrados", "Diseño bicolor"],
+    //     imagen: "../img2/lote8/producto98.png"
+    // },
     {
         id: 99,
         nombre: "Naked Eyeshadow Palette",

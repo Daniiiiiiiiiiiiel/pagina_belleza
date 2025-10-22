@@ -231,7 +231,37 @@ function filtrarProductos() {
     }
     
     productosFiltrados = productos;
-    renderizarProductos(productos, true);
+    
+    // Verificar si se seleccionó la categoría "perfumes"
+    if (categoriaSeleccionada === 'perfumes') {
+        mostrarMensajeProximamente();
+    } else {
+        renderizarProductos(productos, true);
+    }
+}
+
+// Mostrar mensaje "Próximamente" para perfumes
+function mostrarMensajeProximamente() {
+    const contenedor = document.getElementById('productos-lista');
+    const countElement = document.getElementById('count');
+    
+    // Actualizar contador
+    countElement.textContent = '0';
+    
+    // Mostrar mensaje de próximamente
+    contenedor.innerHTML = `
+        <div class="no-resultados proximamente">
+            <i class="fas fa-clock"></i>
+            <h3>Próximamente</h3>
+            <p>Estamos trabajando en nuestra línea de perfumes. ¡Muy pronto disponible!</p>
+        </div>
+    `;
+    
+    // Eliminar controles de navegación si existen
+    const controlesExistentes = document.getElementById('controles-paginacion');
+    if (controlesExistentes) {
+        controlesExistentes.remove();
+    }
 }
 
 // Configurar modal
@@ -379,17 +409,17 @@ function configurarMenuMobile() {
 }
 
 // Newsletter (comentado)
-// function configurarNewsletter() {
-//     const form = document.querySelector('.newsletter-form');
-//     if (form) {
-//         form.addEventListener('submit', function(e) {
-//             e.preventDefault();
-//             const email = this.querySelector('input[type="email"]').value;
-//             alert(`¡Gracias por suscribirte con el email: ${email}!`);
-//             this.reset();
-//         });
-//     }
-// }
+function configurarNewsletter() {
+    const form = document.querySelector('.newsletter-form');
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            alert(`¡Gracias por suscribirte con el email: ${email}!`);
+            this.reset();
+        });
+    }
+}
 
 // Cambiar estilo del header al hacer scroll
 window.addEventListener('scroll', function() {
