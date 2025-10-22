@@ -29,7 +29,7 @@ function renderizarProductos(productos, reiniciar = false) {
         paginaActual = 0;
     }
     
-    countElement.textContent = productos.length;
+    countElement.textContent = productos.length +1;
     
     // Limpiar contenedor siempre (solo mostramos productos de la página actual)
     contenedor.innerHTML = '';
@@ -56,11 +56,18 @@ function renderizarProductos(productos, reiniciar = false) {
     const productosAMostrar = productos.slice(inicio, fin);
     
     // Renderizar productos de la página actual
-    const productosHTML = productosAMostrar.map(producto => `
+    const productosHTML = productosAMostrar.map(producto => {
+        // Determinar nombre de categoría
+        let nombreCategoria = 'Producto';
+        if (producto.categoria === 'maquillaje') nombreCategoria = 'Maquillaje';
+        else if (producto.categoria === 'skincare') nombreCategoria = 'Skincare';
+        else if (producto.categoria === 'perfumes') nombreCategoria = 'Perfumes';
+        
+        return `
         <div class="producto-card" data-id="${producto.id}" data-categoria="${producto.categoria}">
             <div class="producto-info-detalle">
                 <div>
-                    <span class="producto-categoria">${producto.categoria === 'belleza' ? 'Belleza' : 'Tecnología'}</span>
+                    <span class="producto-categoria">${nombreCategoria}</span>
                     <span class="producto-marca">${producto.marca}</span>
                     <h2 class="producto-titulo">${producto.nombre}</h2>
                     
@@ -84,7 +91,8 @@ function renderizarProductos(productos, reiniciar = false) {
                 </div>
             </div>
         </div>
-    `).join('');
+        `;
+    }).join('');
     
     contenedor.innerHTML = productosHTML;
     
@@ -255,11 +263,16 @@ function configurarModal() {
 function mostrarDetalleProducto(id) {
     const producto = productosDB.find(p => p.id === id);
     if (producto) {
+        // Determinar nombre de categoría
+        let nombreCategoria = 'Producto';
+        if (producto.categoria === 'maquillaje') nombreCategoria = 'Maquillaje';
+        else if (producto.categoria === 'skincare') nombreCategoria = 'Skincare';
+        else if (producto.categoria === 'perfumes') nombreCategoria = 'Perfumes';
+        
         // Actualizar contenido del modal
         document.getElementById('modal-imagen').src = producto.imagen;
         document.getElementById('modal-imagen').alt = producto.nombre;
-        document.getElementById('modal-categoria').textContent = 
-            producto.categoria === 'belleza' ? 'Belleza' : 'Tecnología';
+        document.getElementById('modal-categoria').textContent = nombreCategoria;
         document.getElementById('modal-titulo').textContent = producto.nombre;
         document.getElementById('modal-marca').textContent = producto.marca;
         document.getElementById('modal-descripcion').textContent = producto.descripcion;
@@ -281,7 +294,7 @@ function mostrarDetalleProducto(id) {
                 `¡Hola! Estoy interesado en el siguiente producto:\n\n` +
                 `📦 *${producto.nombre}*\n` +
                 `🏷️ Marca: ${producto.marca}\n` +
-                `📂 Categoría: ${producto.categoria === 'belleza' ? 'Belleza' : 'Tecnología'}\n\n` +
+                `📂 Categoría: ${nombreCategoria}\n\n` +
                 `¿Me podrías dar más información? 😊`
             );
             const url = `https://wa.me/${numero}?text=${mensaje}`;
@@ -365,18 +378,18 @@ function configurarMenuMobile() {
     });
 }
 
-// Newsletter
-function configurarNewsletter() {
-    const form = document.querySelector('.newsletter-form');
-    if (form) {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const email = this.querySelector('input[type="email"]').value;
-            alert(`¡Gracias por suscribirte con el email: ${email}!`);
-            this.reset();
-        });
-    }
-}
+// Newsletter (comentado)
+// function configurarNewsletter() {
+//     const form = document.querySelector('.newsletter-form');
+//     if (form) {
+//         form.addEventListener('submit', function(e) {
+//             e.preventDefault();
+//             const email = this.querySelector('input[type="email"]').value;
+//             alert(`¡Gracias por suscribirte con el email: ${email}!`);
+//             this.reset();
+//         });
+//     }
+// }
 
 // Cambiar estilo del header al hacer scroll
 window.addEventListener('scroll', function() {

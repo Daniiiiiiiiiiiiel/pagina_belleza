@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Actualizar contador de productos
     const productos_totales = document.getElementsByClassName('stat-number')[0];
     if (productos_totales) {
-        productos_totales.textContent = `+${productosDB.length -1}`;
+        productos_totales.textContent = `+${productosDB.length}`;
     }
 });
 
@@ -200,7 +200,7 @@ function aplicarEventListenersProductos() {
                                 
                                 <div class="modal-actions">
                                     <button class="btn-comprar" data-producto='${JSON.stringify(producto)}'>
-                                        <i class="fas fa-shopping-cart"></i> Comprar ahora
+                                        <i class="fas fa-shopping-cart"></i> Conocer más
                                     </button>
                                 </div>
                             </div>
