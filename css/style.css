@@ -40,7 +40,7 @@ h1, h2, h3, h4 {
     margin: 0 auto;
 }
 
-/* Header */
+/* Header con altura fija */
 header {
     background-color: var(--color-blanco);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
@@ -48,7 +48,8 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-    padding: 15px 0;
+    padding: 0;
+    height: 90px;
     transition: all 0.3s ease;
 }
 
@@ -56,21 +57,41 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 
-.logo h1 {
-    color: var(--color-verde-oscuro);
-    font-size: 2.2rem;
-    letter-spacing: 1px;
+/* Estilos mejorados para el logo */
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2px;
+    height: 100%;
+}
+
+.logo img {
+    height: 110px;
+    width: auto;
+    max-width: 250px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
 }
 
 .logo p {
     font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: var(--color-naranja);
-    margin-top: -5px;
-    text-align: center;
+    margin: 0;
+    padding-left: 5px;
+    line-height: 1;
 }
 
 nav ul {
@@ -126,9 +147,9 @@ nav ul li a:hover::after {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(49, 77, 68, 0.7), rgba(49, 77, 68, 0.7)), url('../img/inicio/fondo1.jpeg');
-    background-size: cover;
-    background-position: center;
+    position: relative;
+    overflow: hidden;
+    background: #314d44;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -136,6 +157,73 @@ nav ul li a:hover::after {
     text-align: center;
     color: var(--color-blanco);
     margin-top: 70px;
+}
+
+.hero-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.hero-video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+.hero-video-fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    z-index: 2.5;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+}
+
+.hero.loading::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    z-index: 4;
+}
+
+@keyframes spin {
+    to { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
 .hero-content h2 {
@@ -172,7 +260,9 @@ nav ul li a:hover::after {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Sección Productos */
+/* ========================================
+   SECCIÓN PRODUCTOS - ADAPTADA PARA IMÁGENES CON FONDO
+   ======================================== */
 .productos {
     padding: 5rem 0;
     background-color: var(--color-gris-claro);
@@ -217,20 +307,23 @@ nav ul li a:hover::after {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
+/* NUEVO: Contenedor de imagen adaptado para fotos con fondo */
 .producto-img {
-    height: 470px;
+    height: 350px;
     overflow: hidden;
     position: relative;
-    background-color: var(--color-crema);
+    background: linear-gradient(135deg, var(--color-crema) 0%, rgba(241, 231, 213, 0.3) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1rem;
 }
 
 .producto-img img {
-    width: 80%;
-    height: 80%;
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
     transition: transform 0.5s;
 }
 
@@ -361,12 +454,26 @@ nav ul li a:hover::after {
 
 .nosotros-img {
     flex: 1;
+    width: 100%;
+    max-width: 550px; /* Ancho máximo */
+    height: 450px; /* Altura fija */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    margin: 0 auto; /* Centra el contenedor */
 }
 
 .nosotros-img img {
     width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cubre todo el área manteniendo proporción */
+    object-position: center; /* Centra la imagen */
     border-radius: 10px;
-    box-shadow: 0 0px 3px rgba(0, 0, 0, 0.188);
+    transition: opacity 0.5s ease-in-out;
+}
+
+.nosotros-img img.loaded {
+    animation: fadeInImage 0.6s ease-out;
 }
 
 /* Footer */
@@ -484,7 +591,9 @@ footer {
     color: rgba(255, 255, 255, 0.7);
 }
 
-/* Modal - ESTILOS MEJORADOS */
+/* ========================================
+   MODAL - ADAPTADO PARA IMÁGENES CON FONDO
+   ======================================== */
 .modal {
     display: none;
     position: fixed;
@@ -524,19 +633,20 @@ footer {
     color: var(--color-verde-oscuro);
     transition: all 0.3s;
     z-index: 10;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.95);
     width: 40px;
     height: 40px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .close-modal:hover {
     color: var(--color-naranja);
     transform: rotate(90deg);
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 1);
 }
 
 .modal-body {
@@ -574,20 +684,23 @@ footer {
     flex-wrap: wrap;
 }
 
+/* NUEVO: Imagen del modal adaptada para fotos con fondo */
 .modal-producto-img {
     flex: 1;
     min-width: 300px;
-    padding: 2rem;
+    padding: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-crema);
+    background: white;
 }
 
 .modal-producto-img img {
-    max-width: 100%;
-    max-height: 350px;
-    object-fit: contain;
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
 .modal-producto-info {
@@ -693,9 +806,88 @@ footer {
     box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
 }
 
-/* Responsive */
+/* Animaciones */
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Preload de imágenes para evitar parpadeo */
+body::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    
+    /* Precargar imágenes de nosotros */
+    background-image: 
+        url('../img/inicio/nosotros.jpeg'),
+        url('../img/inicio/nosotros2.jpeg'),
+        url('../img/inicio/nosotros3.jpeg'),
+        url('../img/inicio/fondo1.jpeg'),
+        url('../img/inicio/fondo2.jpeg');
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+/* Responsive para el logo y header */
+@media (max-width: 1024px) {
+    header {
+        height: 85px;
+    }
+    
+    .logo img {
+        height: 105px;
+        max-width: 220px;
+    }
+    
+    .logo p {
+        font-size: 0.8rem;
+    }
+}
+
 @media (max-width: 768px) {
-       nav ul {
+    header {
+        height: 105px;
+    }
+        .nosotros-img {
+        max-width: 100%;
+        height: 350px; /* Altura más pequeña en móvil */
+    }
+
+        .hero-video {
+        object-position: center;
+    }
+    header .container {
+        padding: 0 1rem;
+    }
+    
+    .logo {
+        align-items: center;
+    }
+    
+    .logo img {
+        height: 95px;
+        max-width: 180px;
+    }
+    
+    .logo p {
+        font-size: 0.75rem;
+        text-align: center;
+        padding-left: 0;
+    }
+    
+    nav ul {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -757,6 +949,10 @@ footer {
         flex-direction: column;
     }
     
+    .nosotros-text h2 {
+        text-align: center;
+    }
+    
     .nosotros-stats {
         flex-direction: column;
         gap: 1.5rem;
@@ -766,50 +962,12 @@ footer {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
     
-    .footer-content {
-        grid-template-columns: 1fr;
+    /* Ajuste de altura de imagen de producto en móvil */
+    .producto-img {
+        height: 300px;
     }
     
-    .newsletter-form {
-        flex-direction: column;
-    }
-    
-    .newsletter-form input {
-        border-radius: 5px;
-        margin-bottom: 0.5rem;
-    }
-    
-    .newsletter-form button {
-        border-radius: 5px;
-        padding: 0.8rem;
-    }
-    
-    /* Modal responsive */
-    .modal-content {
-        width: 95%;
-        margin: 5% auto;
-    }
-    
-    .modal-producto-content {
-        flex-direction: column;
-    }
-    
-    .modal-producto-img, .modal-producto-info {
-        min-width: 100%;
-    }
-    
-    .modal-actions {
-        flex-direction: column;
-    }
-    
-    .btn-comprar, .btn-whatsapp {
-        min-width: 100%;
-    }
-        /* Footer responsive - diseño mejorado */
-    footer {
-        padding: 2.5rem 0 1rem;
-    }
-    
+    /* Footer responsive */
     .footer-content {
         grid-template-columns: 1fr;
         gap: 2.5rem;
@@ -902,105 +1060,35 @@ footer {
         font-size: 0.9rem;
         line-height: 1.6;
     }
-        .nosotros-text h2{
-        text-align: center;
-    }
-}
-
-
-
-/* Header con altura fija */
-header {
-    background-color: var(--color-blanco);
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    padding: 0;
-    height: 90px;
-    transition: all 0.3s ease;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
-
-/* Estilos mejorados para el logo */
-.logo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 2px;
-    height: 100%;
-}
-
-.logo img {
-    height: 110px;
-    width: auto;
-    max-width: 250px;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.logo img:hover {
-    transform: scale(1.05);
-}
-
-.logo p {
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    font-size: 0.85rem;
-    color: var(--color-naranja);
-    margin: 0;
-    padding-left: 5px;
-    line-height: 1;
-}
-
-/* Responsive para el logo y header */
-@media (max-width: 1024px) {
-    header {
-        height: 85px;
+    
+    /* Modal responsive */
+    .modal-content {
+        width: 95%;
+        margin: 5% auto;
     }
     
-    .logo img {
-        height: 105px;
-        max-width: 220px;
+    .modal-producto-content {
+        flex-direction: column;
     }
     
-    .logo p {
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 768px) {
-    header {
-        height: 105px;
+    .modal-producto-img, .modal-producto-info {
+        min-width: 100%;
     }
     
-    header .container {
-        padding: 0 1rem;
+    .modal-producto-img {
+        padding: 2rem;
     }
     
-    .logo {
-        align-items: center;
+    .modal-producto-img img {
+        max-height: 350px;
     }
     
-    .logo img {
-        height: 95px;
-        max-width: 180px;
+    .modal-actions {
+        flex-direction: column;
     }
     
-    .logo p {
-        font-size: 0.75rem;
-        text-align: center;
-        padding-left: 0;
+    .btn-comprar, .btn-whatsapp {
+        min-width: 100%;
     }
 }
 
@@ -1008,60 +1096,21 @@ header .container {
     header {
         height: 90px;
     }
-    
+        .nosotros-img {
+        height: 280px; /* Aún más pequeña en móviles pequeños */
+    }
     .logo img {
         height: 95px;
         max-width: 150px;
-         margin-right: 5lvh;
+        margin-right: 5lvh;
     }
     
     .logo p {
         font-size: 0.7rem;
     }
-}
-
-/* Agregar estas reglas al archivo css/style.css */
-
-/* Transición suave para imagen de Nosotros */
-.nosotros-img img {
-    transition: opacity 0.5s ease-in-out;
-}
-
-/* Transición suave para fondo del Hero */
-.hero {
-    transition: background 0.8s ease-in-out;
-}
-
-/* Preload de imágenes para evitar parpadeo */
-body::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    z-index: -1;
     
-    /* Precargar imágenes de nosotros */
-    background-image: 
-        url('../img/inicio/nosotros.jpeg'),
-        url('../img/inicio/nosotros2.jpeg'),
-        url('../img/inicio/nosotros3.jpeg'),
-        url('../img/inicio/fondo1.jpeg'),
-        url('../img/inicio/fondo2.jpeg');
-}
-
-/* Animación de entrada para la imagen de Nosotros */
-@keyframes fadeInImage {
-    from {
-        opacity: 0;
-        transform: scale(0.95);
+    .producto-img {
+        height: 280px;
     }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-.nosotros-img img.loaded {
-    animation: fadeInImage 0.6s ease-out;
+    
 }

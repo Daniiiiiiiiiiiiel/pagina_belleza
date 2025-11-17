@@ -24,7 +24,7 @@ export const productosDB = [
         categoria: "",
         descripcion: "Tratamiento revitalizante y fortalecedor con keratina vegetal. Diseñado para reparar, fortalecer y restaurar la estructura capilar. Ideal para cabellos débiles, quebradizos o dañados por procesos químicos. Co-wash.",
         caracteristicas: ["1000g", "Keratina Vegetal", "Revitaliza y fortalece", "Co-wash"],
-        imagen: "../img/lote1/producto3.png"
+        imagen: "../img/lote1/producto3.png",
     },
     {
         id: 4,
@@ -53,7 +53,7 @@ export const productosDB = [
         caracteristicas: ["1000g", "Fuerza botánica", "Brillo e hidratación", "Liberado"],
         imagen: "../img/lote1/producto6.png"
     },
-    {
+    {   
         id: 7,
         nombre: "Coquetel de Frutas Kids",
         marca: "SKALA (Línea EXPERT)",
@@ -382,7 +382,7 @@ export const productosDB = [
         nombre: "#TodeCacho Ativador de Cachos - Redução Volumosa",
         marca: "Salon Line",
         categoria: "",
-        descripcion: "Activador de rizos #TodeCacho con reducción volumosa. Proporciona definición, control de volumen y activación de rizos naturales. Ideal para rizos tipo 3 y 4 que necesitan definición sin frizz y control de volumen. Fórmula ligera que no pesa. Presentación de 300ml.",
+        descripcion: "Activador de rizos #TodeCacho con reducción volumosa. Proporciona definición, control de volumen y activación derizos naturales. Ideal para rizos tipo 3 y 4 que necesitan definición sin frizz y control de volumen. Fórmula ligera que no pesa. Presentación de 300ml.",
         caracteristicas: ["300ml", "Activador de rizos", "Reducción volumosa", "Definición sin frizz"],
         imagen: "../img/lote4/producto43.png"
     },
@@ -567,24 +567,6 @@ export const productosDB = [
         imagen: "../img2/lote5/producto63.png"
     },
     {
-        id: 64,
-        nombre: "Mele Óleo de Argan - Reparação & Força",
-        marca: "Salon Line",
-        categoria: "",
-        descripcion: "Mascarilla capilar con aceite de argán para reparación y fuerza. Proporciona reconstrucción extrema y mantenimiento extranutritivo. Tratamiento intensivo que repara profundamente cabellos dañados, devolviendo fuerza, brillo y vitalidad. Fórmula concentrada profesional. Presentación de 300g.",
-        caracteristicas: ["300g", "Aceite de Argán", "Reparación extrema", "Fuerza", "Mantenimiento extranutritivo"],
-        imagen: "../img2/lote6/producto64.png"
-    },
-    {
-        id: 65,
-        nombre: "Karité Bi-Phase Formula - Calming & Keratin",
-        marca: "Karité",
-        categoria: "",
-        descripcion: "Set de fórmulas bifásicas Karité con dos tratamientos profesionales. Incluye versión Calming (calmante) y versión con Keratina. Fórmulas poderosas bifásicas que combinan fase acuosa y oleosa para máxima efectividad. Suaviza, nutre y repara el cabello. Productos suaves pero efectivos.",
-        caracteristicas: ["Set 2 productos", "Fórmula bifásica", "Calming", "Keratin", "Profesional"],
-        imagen: "../img2/lote6/producto65.png"
-    },
-    {
         id: 66,
         nombre: "#TodeCacho Máscara Reparação Fortalecedora",
         marca: "Salon Line",
@@ -594,78 +576,6 @@ export const productosDB = [
         imagen: "../img2/lote6/producto66.png"
     },
     {
-        id: 67,
-        nombre: "Dr. Rashel Hyaluronic Acid Face Wash",
-        marca: "Dr. Rashel",
-        categoria: "skincare",
-        descripcion: "Limpiador facial con ácido hialurónico. Limpia suavemente mientras hidrata profundamente la piel. El ácido hialurónico ayuda a retener la humedad, manteniendo la piel hidratada y fresca. Limpia sin resecar, dejando la piel suave y elástica. Presentación de 100g.",
-        caracteristicas: ["100g", "Ácido Hialurónico", "Limpiador facial", "Hidratante", "Limpieza suave"],
-        imagen: "../img2/lote6/producto67.png"
-    },
-    {
-        id: 68,
-        nombre: "Kit Dr. Rashel Hyaluronic Acid - Rutina Completa",
-        marca: "Dr. Rashel",
-        categoria: "skincare",
-        descripcion: "Kit completo de rutina facial Dr. Rashel con ácido hialurónico. Incluye limpiador facial (Face Wash), sérum de ácido hialurónico y crema hidratante. Sistema completo de hidratación profunda que limpia, trata y humecta la piel. Rutina completa antienvejecimiento con máxima hidratación.",
-        caracteristicas: ["Kit 3 productos", "Ácido Hialurónico", "Rutina completa", "Hidratación profunda", "Antienvejecimiento"],
-        imagen: "../img2/lote6/producto68.png"
-    },
-    {
-        id: 69,
-        nombre: "Dr. Rashel Salicylic Acid Renewal Face Wash",
-        marca: "Dr. Rashel",
-        categoria: "skincare",
-        descripcion: "Limpiador facial renovador con ácido salicílico. Limpia suavemente y exfolia, controla la grasa y combate el acné. El ácido salicílico penetra los poros, elimina impurezas y células muertas. Refresca y calma la piel. Ideal para piel grasa o con tendencia al acné. Presentación de 100g.",
-        caracteristicas: ["100g", "Ácido Salicílico", "Anti-acné", "Control de grasa", "Exfoliante suave"],
-        imagen: "../img2/lote6/producto69.png"
-    },
-    {
-        id: 70,
-        nombre: "Dr. Rashel Vitamin C Turmeric Face Oil",
-        marca: "Dr. Rashel",
-        categoria: "skincare",
-        descripcion: "Aceite facial con vitamina C y cúrcuma. Antioxidante e hidratante que ilumina el tono de la piel. La vitamina C combate los radicales libres y aclara manchas, mientras la cúrcuma tiene propiedades antiinflamatorias. Proporciona brillo natural y luminosidad a la piel.",
-        caracteristicas: ["Aceite facial", "Vitamina C", "Cúrcuma", "Antioxidante", "Iluminador"],
-        imagen: "../img2/lote6/producto70.png"
-    },
-    {
-        id: 71,
-        nombre: "Dr. Rashel Gold Collagen Serum 24K",
-        marca: "Dr. Rashel",
-        categoria: "skincare",
-        descripcion: "Sérum facial premium con oro real de 24K, átomos de oro y colágeno. Fórmula lujosa antiedad que reafirma, hidrata y revitaliza la piel. El oro estimula la renovación celular, mientras el colágeno mejora la elasticidad. Sérum precioso y youthful (juvenil). Presentación de 40ml.",
-        caracteristicas: ["40ml", "Oro 24K", "Colágeno", "Antiedad", "Sérum premium"],
-        imagen: "../img2/lote6/producto71.png"
-    },
-    {
-        id: 72,
-        nombre: "Kit Dr. Rashel Salicylic Acid - Tratamiento Anti-Acné",
-        marca: "Dr. Rashel",
-        categoria: "skincare",
-        descripcion: "Kit completo Dr. Rashel con ácido salicílico para tratamiento anti-acné. Incluye limpiador facial (Face Wash), sérum o tónico, y crema o gel. Sistema completo que limpia, trata y controla el acné. Reduce imperfecciones, controla grasa y minimiza poros. Tratamiento profesional completo.",
-        caracteristicas: ["Kit 3 productos", "Ácido Salicílico", "Anti-acné", "Control de grasa", "Tratamiento completo"],
-        imagen: "../img2/lote6/producto72.png"
-    },
-    // {
-    //     id: 73,
-    //     nombre: "Smart Fascia Massager JY-760",
-    //     marca: "Smart Fascia",
-    //     categoria: "tecnologia",
-    //     descripcion: "Masajeador de fascia inteligente modelo JY-760. Pistola de masaje profesional para aliviar tensión muscular, reducir dolor y mejorar la circulación. Incluye múltiples cabezales intercambiables para diferentes zonas del cuerpo. Ideal para recuperación deportiva, relajación y terapia muscular. Múltiples velocidades ajustables.",
-    //     caracteristicas: ["Pistola de masaje", "Múltiples velocidades", "Cabezales intercambiables", "Terapia muscular", "Profesional"],
-    //     imagen: "../img2/lote6/producto73.png"
-    // },
-    // {
-    //     id: 74,
-    //     nombre: "Hair Ball Trimmer - Lint Remover",
-    //     marca: "Hair Ball Trimmer",
-    //     categoria: "tecnologia",
-    //     descripcion: "Removedor de pelusa y bolitas (lint remover) para ropa y telas. Dispositivo eléctrico que elimina eficazmente pelusa, bolitas y fibras sueltas de prendas, sofás y otras telas. Mantiene la ropa como nueva. Fácil de usar con cuchillas seguras y efectivas. Ideal para el cuidado de prendas.",
-    //     caracteristicas: ["Removedor eléctrico", "Elimina pelusas", "Para ropa y telas", "Fácil de usar", "Cuidado de prendas"],
-    //     imagen: "../img2/lote6/producto74.png"
-    // },
-    {
         id: 75,
         nombre: "Set Serum Nevada - Biotina, Ricino y Romero",
         marca: "Nevada",
@@ -673,293 +583,5 @@ export const productosDB = [
         descripcion: "Set de 3 sérums capilares Nevada. Incluye Biotina con Romero (fortalece y estimula crecimiento), Ricino/Castor Oil (nutrición y crecimiento), y Aceite de Ricino con vitaminas (fuerza, prevención de caída y crecimiento). Sistema completo para fortalecer, nutrir y estimular el crecimiento del cabello.",
         caracteristicas: ["Set 3 sérums", "Biotina", "Aceite de Ricino", "Romero", "Crecimiento capilar"],
         imagen: "../img2/lote6/producto75.png"
-    },
-    {
-        id: 76,
-        nombre: "Kit Dr. Rashel Hyaluronic Acid - Hidratación Profunda",
-        marca: "Dr. Rashel",
-        categoria: "skincare",
-        descripcion: "Set facial hidratante con ácido hialurónico de Dr. Rashel. Incluye limpiador facial, sérum hidratante y crema humectante. Ideal para pieles secas o deshidratadas, mejora la elasticidad y suaviza líneas finas. Fórmula ligera y de rápida absorción.",
-        caracteristicas: ["Ácido hialurónico", "Hidratación profunda", "Kit 3 productos", "Piel suave", "Uso diario"],
-        imagen: "../img2/lote7/producto76.png"
-    },
-    // {
-    //     id: 77,
-    //     nombre: "Mini Bocina Bluetooth Cilíndrica - Color Gris",
-    //     marca: "Genérica",
-    //     categoria: "tecnologia",
-    //     descripcion: "Bocina portátil inalámbrica con diseño cilíndrico y acabado en malla gris. Ideal para exteriores, fiestas o uso personal. Sonido envolvente, conectividad Bluetooth y diseño resistente al agua.",
-    //     caracteristicas: ["Bluetooth", "Diseño portátil", "Resistente al agua", "Sonido envolvente", "Color gris"],
-    //     imagen: "../img2/lote7/producto77.png"
-    // },
-    // {
-    //     id: 78,
-    //     nombre: "Mini Bocina Bluetooth Cilíndrica - Variedad de colores",
-    //     marca: "Genérica",
-    //     categoria: "tecnologia",
-    //     descripcion: "Bocina inalámbrica portátil con diseño cilíndrico en color naranja. Incluye correa para transporte, conectividad Bluetooth y resistencia al agua. Ideal para música en movimiento.",
-    //     caracteristicas: ["Bluetooth", "Diseño portátil", "Color vibrante", "Resistente al agua", "Con correa"],
-    //     imagen: "../img2/lote7/producto78.png"
-    // },
-    // {
-    //     id: 79,
-    //     nombre: "Audífonos Inalámbricos con Orejas de Gato - Estilo Anime",
-    //     marca: "Genérica",
-    //     categoria: "tecnologia",
-    //     descripcion: "Audífonos Bluetooth con diseño de orejas de gato, ideales para amantes del estilo kawaii. Incluyen radio FM, entrada para tarjeta TF, conexión AUX y función manos libres. Cómodos y llamativos.",
-    //     caracteristicas: ["Bluetooth", "Orejas de gato", "FM Radio", "Entrada TF", "Diseño juvenil"],
-    //     imagen: "../img2/lote7/producto79.png"
-    // },
-    // {
-    //     id: 80,
-    //     nombre: "Bocina P5 Pro - Conectividad Múltiple y Resistencia al Agua",
-    //     marca: "P5 Pro",
-    //     categoria: "tecnologia",
-    //     descripcion: "Bocina inalámbrica P5 Pro con capacidad de enlazar más de 100 dispositivos compatibles. Diseño resistente al agua, ideal para exteriores. Disponible en colores rojo y negro.",
-    //     caracteristicas: ["Conectividad múltiple", "Bluetooth", "Resistente al agua", "Diseño moderno", "Alta potencia"],
-    //     imagen: "../img2/lote7/producto80.png"
-    // },
-    // {
-    //     id: 81,
-    //     nombre: "Consola Retro Sup - Conectividad a Pantalla",
-    //     marca: "Sup",
-    //     categoria: "tecnologia",
-    //     descripcion: "Consola portátil estilo retro con juegos clásicos integrados. Incluye salida de video para conexión a pantalla externa. Ideal para nostálgicos y amantes del gaming retro.",
-    //     caracteristicas: ["Juegos clásicos", "Pantalla integrada", "Salida de video", "Portátil", "Diseño retro"],
-    //     imagen: "../img2/lote7/producto81.png"
-    // },
-    // {
-    //     id: 83,
-    //     nombre: "Mini Impresora BT - Diseño Compacto y Portátil",
-    //     marca: "Genérica",
-    //     categoria: "tecnologia",
-    //     descripcion: "Mini impresora portátil con conectividad Bluetooth. Ideal para imprimir notas, etiquetas o fotos desde el celular. Diseño compacto y moderno, fácil de transportar.",
-    //     caracteristicas: ["Bluetooth", "Portátil", "Impresión instantánea", "Diseño moderno", "Compatible con smartphone"],
-    //     imagen: "../img2/lote7/producto83.png"
-    // },
-    // {
-    //     id: 84,
-    //     nombre: "Plancha de Cabello SIMAY SEN - Keratin Deluxe",
-    //     marca: "SIMAY SEN",
-    //     categoria: "tecnologia",
-    //     descripcion: "Plancha profesional para el cabello con recubrimiento cerámico y tecnología de calentamiento rápido. Ideal para alisar y proteger el cabello con control de temperatura.",
-    //     caracteristicas: ["Ceramic Coating", "Control de temperatura", "Calentamiento rápido", "Diseño elegante", "Uso profesional"],
-    //     imagen: "../img2/lote7/producto84.png"
-    // },
-    // {
-    //     id: 85,
-    //     nombre: "Rizador de Cabello SIKIYSEN - Diamond Curls",
-    //     marca: "SIKIYSEN",
-    //     categoria: "tecnologia",
-    //     descripcion: "Rizador de cabello con diseño de barril único para crear rizos definidos. Incluye peine y pinza. Ideal para peinados creativos y acabados profesionales.",
-    //     caracteristicas: ["Rizos definidos", "Incluye accesorios", "Diseño ergonómico", "Fácil de usar", "Estilo profesional"],
-    //     imagen: "../img2/lote7/producto85.png"
-    // },
-    // {
-    //     id: 86,
-    //     nombre: "Mini Impresora BT - Diseño Cute con Carita",
-    //     marca: "Genérica",
-    //     categoria: "tecnologia",
-    //     descripcion: "Mini impresora Bluetooth con diseño adorable de carita sonriente y orejas azules. Ideal para imprimir fotos, etiquetas o notas desde el celular. Compacta y fácil de transportar.",
-    //     caracteristicas: ["Bluetooth", "Diseño cute", "Portátil", "Impresión instantánea", "Compatible con smartphone"],
-    //     imagen: "../img2/lote7/producto86.png"
-    // },
-    // {
-    //     id: 87,
-    //     nombre: "Espejo LED con Botón Táctil - Iluminación Regulable",
-    //     marca: "Genérica",
-    //     categoria: "tecnologia",
-    //     descripcion: "Espejo rectangular con luz LED integrada y botón táctil para encendido. Ideal para maquillaje o cuidado personal en ambientes con poca luz. Diseño moderno y funcional.",
-    //     caracteristicas: ["Luz LED", "Botón táctil", "Diseño moderno", "Iluminación regulable", "Uso personal"],
-    //     imagen: "../img2/lote7/producto87.png"
-    // },
-    {
-        id: 88,
-        nombre: "Primer Stick Hidratante Karité - Base de Maquillaje",
-        marca: "Karité",
-        categoria: "maquillaje",
-        descripcion: "Primer en barra hidratante de Karité. Prepara la piel para el maquillaje, suaviza imperfecciones y proporciona cobertura ligera. Presentación compacta y fácil de aplicar.",
-        caracteristicas: ["Hidratante", "Cobertura ligera", "Formato stick", "Prepara la piel", "Fácil aplicación"],
-        imagen: "../img2/lote7/producto88.png"
-    },
-    {
-        id: 89,
-        nombre: "Rubor Líquido Kiss Beauty - Acabado Velvet",
-        marca: "Kiss Beauty",
-        categoria: "maquillaje",
-        descripcion: "Rubor líquido con acabado aterciopelado de Kiss Beauty. Textura suave y fácil de difuminar. Ideal para un look natural y duradero. Presentación compacta de 7 ml.",
-        caracteristicas: ["Rubor líquido", "Acabado velvet", "Fácil de difuminar", "Look natural", "Presentación compacta"],
-        imagen: "../img2/lote7/producto89.png"
-    },
-    // {
-    //     id: 90,
-    //     nombre: "Secadora de Cabello Super Fast Dryer - Motor Digital",
-    //     marca: "Genérica",
-    //     categoria: "tecnologia",
-    //     descripcion: "Secadora de cabello con motor digital de alta velocidad. Control inteligente de temperatura para proteger el cabello. Diseño elegante y ergonómico con agarre cómodo.",
-    //     caracteristicas: ["Motor digital", "Secado rápido", "Control de temperatura", "Diseño elegante", "Agarre cómodo"],
-    //     imagen: "../img2/lote7/producto90.png"
-    // },
-    {
-        id: 91,
-        nombre: "Paleta de Maquillaje Frida Kahlo - Edición Artística",
-        marca: "Frida Kahlo",
-        categoria: "maquillaje",
-        descripcion: "Paleta de maquillaje multifuncional inspirada en el arte de Frida Kahlo. Contiene 20 sombras de ojos en tonos cálidos y vibrantes, 6 labiales en tonos rojos y 4 polvos compactos para contorno o base. Incluye espejo integrado y diseño exterior con ilustraciones florales y animales. Ideal para quienes buscan creatividad y expresión en su rutina de belleza.",
-        caracteristicas: ["Sombras de ojos", "Labiales", "Polvos compactos", "Diseño artístico", "Con espejo"],
-        imagen: "../img2/lote7/producto91.png"
-    },
-    {
-        id: 92,
-        nombre: "Paleta Lady Lion Fantasy - Maquillaje Completo",
-        marca: "Lady Lion",
-        categoria: "maquillaje",
-        descripcion: "Paleta de maquillaje Lady Lion Fantasy con diseño vibrante y artístico. Incluye variedad de sombras, rubores y labiales en tonos cálidos y neutros. Ideal para looks completos y versátiles. Presentación con espejo y empaque decorativo con ilustración de mujer y leopardo.",
-        caracteristicas: ["Sombras", "Rubores", "Labiales", "Diseño artístico", "Con espejo"],
-        imagen: "../img2/lote7/producto92.png"
-    },
-    {
-        id: 93,
-        nombre: "Máscara de Pestañas Maybelline Volum' Express - Waterproof",
-        marca: "Maybelline",
-        categoria: "maquillaje",
-        descripcion: "Máscara de pestañas Volum' Express de Maybelline con fórmula resistente al agua. Proporciona volumen intenso y duración prolongada. Ideal para climas húmedos o uso diario sin retoques. Presentación en tubo degradado rojo-dorado.",
-        caracteristicas: ["Volumen intenso", "Resistente al agua", "Larga duración", "Fórmula profesional", "Presentación compacta"],
-        imagen: "../img2/lote7/producto93.png"
-    },
-    // {
-    //     id: 94,
-    //     nombre: "Audífonos Solo Pro BT0004MS - Cancelación de Ruido Activa",
-    //     marca: "Solo Pro",
-    //     categoria: "tecnologia",
-    //     descripcion: "Audífonos inalámbricos Solo Pro con cancelación activa de ruido. Diseño ergonómico y envolvente, ideales para música, llamadas o concentración. Incluyen conectividad Bluetooth y presentación premium en caja.",
-    //     caracteristicas: ["Cancelación de ruido", "Bluetooth", "Diseño ergonómico", "Alta fidelidad", "Presentación premium"],
-    //     imagen: "../img2/lote7/producto94.png"
-    // },
-    {
-        id: 95,
-        nombre: "Kit Dr. Rashel Alpha Arbutin + AHA - Tratamiento Completo",
-        marca: "Dr. Rashel",
-        categoria: "skincare",
-        descripcion: "Kit completo de tratamiento facial Dr. Rashel con Alpha Arbutin y AHA (ácidos alfa hidroxi). Incluye limpiador facial exfoliante, sérum aclarante concentrado y crema hidratante despigmentante. Sistema profesional que aclara manchas, uniforma el tono, exfolia suavemente y proporciona luminosidad. Tratamiento completo antimanchas y antienvejecimiento.",
-        caracteristicas: ["Kit 3 productos", "Alpha Arbutin", "AHA", "Antimanchas", "Tratamiento completo"],
-        imagen: "../img2/lote7/producto95.png"
-    },
-    // {
-    //     id: 96,
-    //     nombre: "Solo Pro Wireless Headphones",
-    //     marca: "Beats (Solo Pro)",
-    //     categoria: "tecnologia",
-    //     descripcion: "Audífonos inalámbricos over-ear con cancelación activa de ruido. Diseño moderno y elegante con almohadillas acolchadas para máximo confort durante uso prolongado. Disponibles en múltiples colores: negro, rojo, azul y beige/dorado. Conexión Bluetooth de alta calidad para una experiencia de audio inmersiva.",
-    //     caracteristicas: ["Wireless", "Cancelación de ruido", "Over-ear", "Bluetooth", "Múltiples colores"],
-    //     imagen: "../img2/lote8/producto96.png"
-    // },
-    // {
-    //     id: 97,
-    //     nombre: "Fashion Wireless Headset",
-    //     marca: "VZV-26M",
-    //     categoria: "tecnologia",
-    //     descripcion: "Audífonos inalámbricos con iluminación LED RGB en los auriculares. Diseño fashion y moderno con acabados en colores pastel y vibrantes. Cuenta con controles táctiles integrados y almohadillas suaves para uso prolongado. Disponibles en colores: gris, morado/lila, rosa, lavanda y verde menta.",
-    //     caracteristicas: ["Wireless", "LED RGB", "Diseño Fashion", "Controles táctiles", "Colores variados"],
-    //     imagen: "../img2/lote8/producto97.png"
-    // },
-    // {
-    //     id: 98,
-    //     nombre: "P47 Wireless Headphones",
-    //     marca: "P47 5.0+EDR",
-    //     categoria: "tecnologia",
-    //     descripcion: "Audífonos inalámbricos Bluetooth con diseño compacto y plegable. Cuenta con controles integrados en el auricular para reproducción y volumen. Combinación de colores gris y azul con almohadillas cómodas. Tecnología Bluetooth 5.0+EDR para conexión estable y de bajo consumo energético.",
-    //     caracteristicas: ["Bluetooth 5.0+EDR", "Plegable", "Controles integrados", "Diseño bicolor"],
-    //     imagen: "../img2/lote8/producto98.png"
-    // },
-    {
-        id: 99,
-        nombre: "Naked Eyeshadow Palette",
-        marca: "NALED (Urban Style)",
-        categoria: "maquillaje",
-        descripcion: "Paleta de sombras para ojos con 9 tonos neutros y tierra. Incluye acabados mate, satinados y con brillo para crear looks desde naturales hasta intensos. Colores que van desde beige claro hasta marrón oscuro, perfectos para uso diario o nocturno. Empaque elegante con espejo incorporado.",
-        caracteristicas: ["9 tonos", "Acabados variados", "Tonos neutros", "Con espejo", "Versátil"],
-        imagen: "../img2/lote8/producto99.png"
-    },
-    {
-        id: 100,
-        nombre: "Styling Dust Matt Shades Pomade Wax",
-        marca: "AGIVA",
-        categoria: "",
-        descripcion: "Polvo de peinado con acabado mate para crear volumen y textura. Fórmula de fijación extra fuerte (Extra Strong) ideal para estilos modernos y estructurados. Proporciona un acabado natural sin brillo. Perfecto para cabello corto y medio. Incluye esponja aplicadora.",
-        caracteristicas: ["Extra Strong", "Acabado mate", "Textura y volumen", "Con esponja"],
-        imagen: "../img2/lote8/producto100.png"
-    },
-    {
-        id: 101,
-        nombre: "Styling Hair Gel Ultra Strong",
-        marca: "AGIVA",
-        categoria: "",
-        descripcion: "Gel para cabello de fijación ultra fuerte con acabado brillante. Fórmula profesional que mantiene el peinado durante todo el día sin residuos. Color azul característico en envase tipo tarro. Ideal para peinados estructurados y estilos definidos que requieren máxima fijación.",
-        caracteristicas: ["Ultra Strong", "Acabado brillante", "Larga duración", "Profesional"],
-        imagen: "../img2/lote8/producto101.png"
-    },
-    {
-        id: 102,
-        nombre: "Safari Dreams Eyeshadow Palette",
-        marca: "IVYLADY",
-        categoria: "maquillaje",
-        descripcion: "Paleta de sombras con temática animal print y tropical. Diseño artístico con ilustraciones de rostros femeninos, rosas y leopardo. Incluye variedad de tonos cálidos y vibrantes para crear looks exóticos y atrevidos. Empaque decorativo ideal como regalo o colección.",
-        caracteristicas: ["Diseño artístico", "Tonos variados", "Temática safari", "Packaging premium"],
-        imagen: "../img2/lote8/producto102.png"
-    },
-    {
-        id: 103,
-        nombre: "Beard Shampoo",
-        marca: "Immortal (The Imposible Barbershop)",
-        categoria: "",
-        descripcion: "Champú especializado para barba que limpia profundamente mientras hidrata y suaviza el vello facial. Fórmula profesional de barbería que elimina impurezas sin resecar. Empaque dorado elegante con diseño vintage y logo de calavera característico de la marca. Producto de cuidado masculino premium.",
-        caracteristicas: ["Especializado para barba", "Limpieza profunda", "Hidratante", "Profesional"],
-        imagen: "../img2/lote8/producto103.png"
-    },
-    {
-        id: 104,
-        nombre: "Collagen Treatment",
-        marca: "BMC (Collagen Treatment)",
-        categoria: "",
-        descripcion: "Tratamiento capilar intensivo con colágeno para reparar y fortalecer el cabello dañado. Fórmula concentrada que restaura la estructura capilar, aporta brillo y suavidad. Ideal para cabellos maltratados por químicos o calor. Presentación en tarro color ámbar con tapa negra.",
-        caracteristicas: ["Con colágeno", "Reparador", "Fortalecedor", "Tratamiento intensivo"],
-        imagen: "../img2/lote8/producto104.png"
-    },
-    {
-        id: 105,
-        nombre: "Collagen Hair Mask",
-        marca: "Karseell",
-        categoria: "",
-        descripcion: "Mascarilla capilar enriquecida con colágeno para hidratación profunda y reparación. Fórmula tipo magic que suaviza y desenreda el cabello. Presentación en tarro de gran tamaño con tapa marrón oscuro. Tratamiento intensivo que devuelve la vitalidad y el brillo natural al cabello.",
-        caracteristicas: ["Colágeno", "Hidratación profunda", "Magic formula", "Gran tamaño"],
-        imagen: "../img2/lote8/producto105.png"
-    },
-    {
-        id: 106,
-        nombre: "Men's Face Scrub",
-        marca: "XtraCare",
-        categoria: "skincare",
-        descripcion: "Exfoliante facial específico para hombres que purifica y suaviza la piel. Fórmula con micropartículas que eliminan células muertas y destapan poros sin causar irritación. Presentación en tubo de 4.5 FL OZ (133 mL). Ideal para preparar la piel antes del afeitado o como parte de la rutina de cuidado facial.",
-        caracteristicas: ["Para hombres", "Exfoliante", "Purifica y suaviza", "4.5 FL OZ"],
-        imagen: "../img2/lote8/producto106.png"
-    },
-    {
-        id: 107,
-        nombre: "Maca Power Shampoo & Conditioner Set",
-        marca: "Karseell (Maca Power)",
-        categoria: "",
-        descripcion: "Set de champú y acondicionador con extracto de maca. El champú proporciona hidratación (Moisture) y el acondicionador ofrece reparación (Repair). Presentación en botellas tipo pump de 500ml cada una. Sistema completo para limpieza, hidratación y reparación del cabello. Combina proteínas y péptidos para resultados profesionales.",
-        caracteristicas: ["Set 2 piezas", "Con maca", "500ml c/u", "Hidrata y repara", "Sistema completo"],
-        imagen: "../img2/lote8/producto107.png"
-    },
-    {
-        id: 108,
-        nombre: "Maca Essence Nut Oil",
-        marca: "Karseell (Maca Power)",
-        categoria: "",
-        descripcion: "Aceite nutritivo para cabello con esencia de maca y nueces. Tratamiento sin enjuague que nutre, suaviza y aporta brillo. Presentación en caja con ventana que muestra el producto. Fórmula concentrada que repara puntas y controla el frizz. Ideal para uso diario en cabello seco o dañado.",
-        caracteristicas: ["Aceite de maca", "Sin enjuague", "Nutritivo", "Control de frizz"],
-        imagen: "../img2/lote8/producto108.png"
     }
 ];

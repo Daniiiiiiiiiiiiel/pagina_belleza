@@ -342,12 +342,18 @@ const imageConfig = {
     nosotros: [
         '../img/inicio/nosotros.jpeg',
         '../img/inicio/nosotros2.jpeg',
-        '../img/inicio/nosotros3.jpeg'
+        '../img/inicio/nosotros3.jpeg',
+        '../img/inicio/nosotros4.png',
+        '../img/inicio/nosotros5.png',
+        '../img/inicio/nosotros6.png',
+        '../img/inicio/nosotros7.png',
+        '../img/inicio/nosotros8.png',
+        '../img/inicio/nosotros9.png',
+        '../img/inicio/nosotros10.png',
+        '../img/inicio/nosotros11.png',
+        
     ],
-    fondoHero: [
-        'img/inicio/fondo1.jpeg',
-        'img/inicio/fondo2.jpeg'
-    ]
+
 };
 
 // Función para rotar imagen de la sección Nosotros
@@ -370,25 +376,85 @@ function rotateNosotrosImage() {
 }
 
 // Función para rotar fondo del Hero
-function rotateHeroBackground() {
+function rotateHeroVideo() {
     const heroSection = document.querySelector('.hero');
     
     if (heroSection) {
-        const randomFondo = getRandomImage(imageConfig.fondoHero);
+        let videoElement = heroSection.querySelector('.hero-video');
+        let fadeOverlay = heroSection.querySelector('.hero-video-fade');
         
-        // Aplicar nuevo fondo con gradiente
-        heroSection.style.background = `linear-gradient(rgba(49, 77, 68, 0.7), rgba(49, 77, 68, 0.7)), url('../${randomFondo}')`;
-        heroSection.style.backgroundSize = 'cover';
-        heroSection.style.backgroundPosition = 'center';
+        if (!videoElement) {
+    const videoContainer = document.createElement('div');
+    videoContainer.className = 'hero-video-container';
+    
+    videoElement = document.createElement('video');
+    videoElement.className = 'hero-video';
+    videoElement.autoplay = true;
+    videoElement.muted = true;
+    videoElement.loop = true;
+    videoElement.playsInline = true;
+    videoElement.playbackRate = 0.75;
+            
+            const overlay = document.createElement('div');
+            overlay.className = 'hero-video-overlay';
+            
+            // Overlay adicional para el fade
+            fadeOverlay = document.createElement('div');
+            fadeOverlay.className = 'hero-video-fade';
+            
+            videoContainer.appendChild(videoElement);
+            videoContainer.appendChild(overlay);
+            videoContainer.appendChild(fadeOverlay);
+            heroSection.insertBefore(videoContainer, heroSection.firstChild);
+        }
         
-        console.log('Fondo Hero cargado:', randomFondo);
+        const videoConfig = {
+            fondoHero: [
+                'img/inicio/fondo.mp4'
+                
+            ]
+        };
+        
+        const randomVideo = videoConfig.fondoHero[Math.floor(Math.random() * videoConfig.fondoHero.length)];
+        heroSection.classList.add('loading');
+        
+        videoElement.src = randomVideo;
+        
+        videoElement.addEventListener('canplaythrough', function() {
+            heroSection.classList.remove('loading');
+            videoElement.play().catch(error => {
+                console.log('Error al reproducir video:', error);
+            });
+        }, { once: true });
+        
+        videoElement.addEventListener('error', function() {
+            console.error('Error al cargar el video:', randomVideo);
+            heroSection.classList.remove('loading');
+        }, { once: true });
+        
+        // Detectar cuando el video está cerca del final para hacer fade
+        videoElement.addEventListener('timeupdate', function() {
+            const duration = videoElement.duration;
+            const currentTime = videoElement.currentTime;
+            
+            // Fade out en los últimos 0.5 segundos
+            if (duration - currentTime < 0.5 && duration - currentTime > 0) {
+                fadeOverlay.style.opacity = '1';
+            }
+            // Fade in en los primeros 0.5 segundos
+            else if (currentTime < 0.5) {
+                fadeOverlay.style.opacity = '0';
+            }
+        });
+        
+        console.log('Video Hero cargado:', randomVideo);
     }
 }
 
 // Función principal de inicialización
 function initImageRotation() {
     rotateNosotrosImage();
-    rotateHeroBackground();
+    rotateHeroVideo();
 }
 
 // Ejecutar al cargar la página
