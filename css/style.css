@@ -832,8 +832,17 @@ body::after {
         url('../img/inicio/nosotros.jpeg'),
         url('../img/inicio/nosotros2.jpeg'),
         url('../img/inicio/nosotros3.jpeg'),
-        url('../img/inicio/fondo1.jpeg'),
-        url('../img/inicio/fondo2.jpeg');
+        url('../img/inicio/nosotros4.png'),
+        url('../img/inicio/nosotros5.png'),
+        url('../img/inicio/nosotros6.png'),
+        url('../img/inicio/nosotros7.png'),
+        url('../img/inicio/nosotros8.png'),
+        url('../img/inicio/nosotros9.png'),
+        url('../img/inicio/nosotros10.png'),
+        url('../img/inicio/nosotros11.png'),
+
+        url('../img/inicio/fondo.mp4'),
+        url('../img/inicio/fondo1.mp4');
 }
 
 /* ========================================

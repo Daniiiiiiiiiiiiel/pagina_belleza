@@ -410,7 +410,8 @@ function rotateHeroVideo() {
         
         const videoConfig = {
             fondoHero: [
-                'img/inicio/fondo.mp4'
+                'img/inicio/fondo.mp4',
+                'img/inicio/fondo1.mp4'
                 
             ]
         };
@@ -482,3 +483,4 @@ if (typeof module !== 'undefined' && module.exports) {
         rotateHeroBackground
     };
 }
+
