@@ -340,8 +340,8 @@ function getRandomImage(imageArray) {
 // Configuración de imágenes disponibles
 const imageConfig = {
     nosotros: [
-        '../img/inicio/nosotros.jpeg',
-        '../img/inicio/nosotros2.jpeg',
+        // '../img/inicio/nosotros.jpeg',
+        '../img/inicio/nosotros2.png',
         '../img/inicio/nosotros3.jpeg',
         '../img/inicio/nosotros4.png',
         '../img/inicio/nosotros5.png',

@@ -467,15 +467,7 @@ export const productosDB = [
         caracteristicas: ["300ml", "Para niños", "Desenredante", "Sin nudos", "Fórmula suave"],
         imagen: "../img2/lote5/producto52.png"
     },
-    {
-        id: 53,
-        nombre: "Meu Lisinho Kids - Creme para Pentear Imaginação e Diversão",
-        marca: "Salon Line (Línea Kids)",
-        categoria: "",
-        descripcion: "Crema para peinar Meu Lisinho Kids con fórmula especial para niños. Imaginación y diversión para desenredar y cuidar diariamente cabellos infantiles sin nós (nudos). Fórmula suave, segura y testeada dermatológicamente. Facilita el peinado haciendo el momento divertido. Presentación de 300ml.",
-        caracteristicas: ["300ml", "Para niños", "Desenredante", "Sin nudos", "Fórmula suave"],
-        imagen: "../img2/lote5/producto53.png"
-    },
+    //53 se elimina, estaba repetido.
     {
         id: 54,
         nombre: "S.O.S Bomba - Tônico Fortalecedor Crescimento",
